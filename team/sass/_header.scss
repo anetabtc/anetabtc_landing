@@ -1,0 +1,65 @@
+
+$icon-std: 2rem;
+$height-std: 88px;
+$padding-std: 24px;
+
+$height-min: 68px;
+$padding-min: 16px;
+
+.main{
+    @media (min-width: 3200px) and (orientation: landscape){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: $height-std;
+        padding: $padding-std;
+        @media (min-width: 3200px) and (orientation: landscape){
+            width: 3200px;
+        }
+        @media (max-width: 1044px) and (orientation: portrait) {
+            height: $height-min;
+            padding: $padding-min;
+        }
+        img{
+            height: $icon-std;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+            i{
+                img{
+                    height: $icon-std*.75;
+                    width: $icon-std*.75;
+                }
+            }
+            .switch{
+                margin-left: $icon-std*.375;
+
+                i{
+                    img{
+                        height: $icon-std;
+                        width: $icon-std;
+                    }
+                    &:first-child{
+                        img{
+                            height: $icon-std*.8;
+                            width: $icon-std*.8;
+                            margin: $icon-std*.1;
+
+                        }
+                    }
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

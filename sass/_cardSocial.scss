@@ -1,0 +1,212 @@
+@use "./fontweight" as fonts;
+
+$width-card-std: 240px;
+$height-card-std: $width-card-std*1.13;
+$border-card-std: $width-card-std*0.077;
+$gap-std: $width-card-std*.15;
+$box-shadow-std: 0px 0px $width-card-std*.15 rgba(0, 0, 0, 0.25);
+
+
+$width-card-hd: $width-card-std*1.167;
+$height-card-hd: $width-card-hd*1.13;
+$border-card-hd: $width-card-hd*0.077;
+$gap-hd: $width-card-hd*.15;
+$box-shadow-hd: 0px 0px $width-card-hd*.15 rgba(0, 0, 0, 0.25);
+
+$width-card-2k: $width-card-std*1.5;
+$height-card-2k: $width-card-2k*1.13;
+$border-card-2k: $width-card-2k*0.077;
+$gap-2k: $width-card-2k*.15;
+$box-shadow-2k: 0px 0px $width-card-2k*.15 rgba(0, 0, 0, 0.25);
+
+$width-card-4k: $width-card-std*2.5;
+$height-card-4k: $width-card-4k*1.13;
+$border-card-4k: $width-card-4k*0.077;
+$gap-4k: $width-card-4k*.15;
+$box-shadow-4k: 0px 0px $width-card-4k*.15 rgba(0, 0, 0, 0.25);
+
+$transition: 0.25s;
+
+$image-std: $width-card-std*.3;
+$image-hd: $width-card-hd*.3;
+$image-2k: $width-card-2k*.3;
+$image-4k: $width-card-4k*.3;
+
+
+$font-pmin-std: 0.875rem;
+$font-pmin-hd: 1rem;
+$font-pmin-2k: 1.5rem;
+$font-pmin-4k: 2.125rem;
+
+$font-h3-std: 1.25rem;
+$font-h3-hd: 1.5rem;
+$font-h3-2k: 2.25rem;
+$font-h3-4k: 3rem;
+
+$primary-color: #000000;
+$secundary-color: #ffffff;
+$dark-color: #141B22;
+
+$twitter: #1DA1F2;
+$discord: #7289DA;
+$telegram: #0088CC;
+$medium-light: $primary-color;
+$medium-dark: $secundary-color;
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.groupSocial {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $gap-std;
+    @media (min-width: 1640px) and (orientation: landscape){
+        gap: $gap-hd;
+    }
+    @media (min-width: 2240px) and (orientation: landscape){
+        gap: $gap-2k;
+    }
+    @media (min-width: 3200px) and (orientation: landscape){
+        gap: $gap-4k;
+    }
+    @media (max-width: 1200px) and (orientation: landscape){
+        width: 599px;
+    }
+    @media (max-width: 600px) and (orientation: landscape){
+        width: 280px;
+    }
+    @media (max-width: 1200px) and (orientation: portrait) {
+        width: 599px;
+    }
+    @media (max-width: 600px) and (orientation: portrait){
+        width: 280px;
+    }
+
+    .cardSocial{
+        width: $width-card-std;
+        height: $height-card-std;
+        box-shadow: $box-shadow-std;
+        border-radius: $border-card-std;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: $font-h3-std $font-h3-std;
+        transition: $transition;
+        background-color: $secundary-color;
+        &:first-child{
+            color: $twitter;
+            p{
+                color: $twitter;
+            }
+        }
+        &:nth-child(2){
+            color: $discord;
+            p{
+                color: $discord;
+            }
+        }
+        &:nth-child(3){
+            color: $telegram;
+            p{
+                color: $telegram;
+            }
+        }
+        &:last-child{
+            color: $medium-light;
+            p{
+                color: $medium-light;
+            }
+        }
+        &:hover{
+            cursor: pointer;
+            scale: 1.05;
+        }
+        @media (min-width: 1640px) and (orientation: landscape){
+            width: $width-card-hd;
+            height: $height-card-hd;
+            box-shadow: $box-shadow-hd;
+            border-radius: $border-card-hd;
+            padding: $font-h3-hd $font-h3-hd;
+        }
+        @media (min-width: 2240px) and (orientation: landscape){
+            width: $width-card-2k;
+            height: $height-card-2k;
+            box-shadow: $box-shadow-2k;
+            border-radius: $border-card-2k;
+            padding: $font-h3-2k $font-h3-2k;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            width: $width-card-4k;
+            height: $height-card-4k;
+            box-shadow: $box-shadow-4k;
+            border-radius: $border-card-4k;
+            padding: $font-h3-4k $font-h3-4k;
+        }
+      }
+
+    img {
+        width: $image-std;
+        height: $image-std;
+        border-radius: 15%;
+        @media (min-width: 1640px) and (orientation: landscape){
+            width: $image-hd;
+            height: $image-hd;
+        }
+        @media (min-width: 2240px) and (orientation: landscape){
+            width: $image-2k;
+            height: $image-2k;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            width: $image-4k;
+            height: $image-4k;
+        }
+    }
+
+    h3 {
+        font-size: $font-h3-std;
+        font-weight: fonts.$font-weight-bold;
+        @media (min-width: 1640px) and (orientation: landscape){
+            font-size: $font-h3-hd;
+        }
+        @media (min-width: 2240px) and (orientation: landscape){
+            font-size: $font-h3-2k;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            font-size: $font-h3-4k;
+        }
+        
+    }
+
+    p{
+        font-weight: fonts.$font-weight-semibold;
+        text-align: center;
+        font-size: $font-pmin-std;
+        @media (min-width: 1640px) and (orientation: landscape){
+            font-size: $font-pmin-hd;
+        }
+        @media (min-width: 2240px) and (orientation: landscape){
+            font-size: $font-pmin-2k;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            font-size: $font-pmin-4k;
+        }
+    }
+}
+
+body.dark{
+    .cardSocial{
+        background: $dark-color;
+        &:last-child{
+            color: $medium-dark;
+            p{
+                color: $medium-dark;
+            }
+        }
+    }
+}

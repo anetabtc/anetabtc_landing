@@ -1,0 +1,61 @@
+
+$img-back-std: 390px;
+$img-back-hd: 500px;
+$img-back-2k: 700px;
+$img-back-4k: 900px;
+
+.background {  
+    position: relative;
+    z-index: -1;
+    @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+        display: none;
+    }
+    @media (max-width: 1044px) and (orientation: portrait) {
+        display: none;
+    }
+
+    div {       
+        position: absolute;
+        top: $img-back-std;
+        img {
+            height: $img-back-std;
+        }
+        @media (min-width: 1640px) and (orientation: landscape){
+            top: $img-back-hd;
+            img{
+                height: $img-back-hd;
+            }
+        }
+        @media (min-width: 2240px) and (orientation: landscape){
+            top: $img-back-2k;
+            img{
+                height: $img-back-2k;
+            } 
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            left: calc((100vw - 3200px)/2);
+            top: $img-back-4k;
+            img{
+                height: $img-back-4k;
+            }
+        }
+    }
+}
+
+.background2 {
+    div{
+        top: 100px;
+        right: 0;  
+        @media (min-width: 1640px) and (orientation: landscape){
+            top: 120px;
+        }
+        @media (min-width: 2240px) and (orientation: landscape){
+            top: 180px;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            left: auto;
+            right: calc((100vw - 3200px)/2);
+            top: 250px;
+        }
+    }
+}

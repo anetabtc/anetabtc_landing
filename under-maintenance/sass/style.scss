@@ -1,0 +1,149 @@
+@use "./fontweight" as fonts;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background:radial-gradient(42.78% 42.78% at 50% 40.6%, rgba(255, 250, 202, 0.3) 0%, rgba(65, 164, 255, 0.3) 100%), linear-gradient(180deg, rgba(155, 217, 242, 0) 41.16%, rgba(255, 255, 255, 0.7) 100%), linear-gradient(237.67deg, rgba(179, 233, 255, 0) 30.62%, rgba(255, 215, 138, 0.33) 100%), linear-gradient(121.92deg, rgba(155, 217, 242, 0) 31.4%, rgba(255, 215, 138, 0.33) 100%), linear-gradient(115.18deg, rgba(168, 200, 230, 0.5) -35.29%, rgba(168, 200, 230, 0) 57.9%), linear-gradient(245.41deg, rgba(168, 230, 226, 0.55) -12.18%, rgba(155, 217, 242, 0) 56.8%), linear-gradient(0deg, rgba(216, 234, 250, 0.12), rgba(216, 234, 250, 0.12)), #B8DEFA;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+div{
+    margin: 0 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 360px;
+        @media (min-width: 2240px) and (orientation: landscape){
+            width: 550px;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            width: 825px;
+        }   
+        @media (max-width: 1640px) and (orientation: landscape){
+            width: 320px;
+          }
+          @media (max-width: 1044px) and (orientation: portrait) {
+            width: 320px;
+        }
+        @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+            display: none;
+        }
+        @media (max-width: 600px) and (orientation: portrait){
+            display: none;
+        }
+    }
+    h1{
+        font-weight: fonts.$font-weight-extrabold;
+        font-size: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+        @media (min-width: 2240px) and (orientation: landscape){
+            font-size: 3rem;
+            margin-top: 3rem;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            font-size: 4.5rem;
+            margin-top: 4.5rem;
+        }   
+        @media (max-width: 1640px) and (orientation: landscape){
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+          }
+          @media (max-width: 1044px) and (orientation: portrait) {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+        }
+    }
+    p{
+      font-weight: fonts.$font-weight-semibold;
+      font-size: 1.25rem;  
+      margin-top: 1.25rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      @media (min-width: 2240px) and (orientation: landscape){
+        font-size: 2rem;  
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    @media (min-width: 3200px) and (orientation: landscape){
+        font-size: 3rem;  
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+    }  
+      @media (max-width: 1640px) and (orientation: landscape){
+        font-size: 1rem;  
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+      @media (max-width: 1044px) and (orientation: portrait) {
+        font-size: 1rem;  
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        }
+    }
+
+    button {
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.25s;
+        background: linear-gradient(94.47deg, #EDA6A7 -16.48%, #AAB1E5 49.36%);
+        width: 280px;
+        padding: 0.875rem 0;
+        border-radius: 14px;
+        &:hover{
+            scale: 1.05;
+        }
+        a{
+            font-weight: fonts.$font-weight-bold;
+            font-size: 1.5rem;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        @media (min-width: 2240px) and (orientation: landscape){
+            width: 420px;
+            border-radius: 20px;
+            a{
+                font-size: 2.25rem;
+            }
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            width: 630px;
+            border-radius: 30px;
+            a{
+                font-size: 3.5rem;
+            }
+        }  
+        @media (max-width: 1640px) and (orientation: landscape){
+            width: 250px;
+            border-radius: 12px;
+            a{
+                font-size: 1.25rem;
+            }
+        }
+        @media (max-width: 1044px) and (orientation: portrait) {
+            width: 250px;
+            height: 45px;
+            border-radius: 12px;
+            a{
+                font-size: 1.25rem;
+            }
+            }
+    }
+}

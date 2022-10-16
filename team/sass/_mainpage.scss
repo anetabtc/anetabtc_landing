@@ -1,0 +1,36 @@
+@use "./fontweight" as fonts;
+
+$font-h1-std: 1.5rem;
+$font-h1-2k: 2.25rem;
+$font-h1-4k: 3rem;
+
+$primary-color: #000000;
+$secundary-color: #ffffff;
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        color: $primary-color;
+        font-weight: fonts.$font-weight-extrabold;
+        font-size: $font-h1-std;
+        margin-bottom: $font-h1-std*3;
+        @media (min-width: 2240px) and (orientation: landscape){
+            font-size: $font-h1-2k;
+            margin-bottom: $font-h1-2k*3;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            font-size: $font-h1-4k;
+            margin-bottom: $font-h1-4k*3;
+        }
+    }
+   }
+
+body.dark{
+    main {
+        h1{
+            color: $secundary-color;
+        }
+    }
+}

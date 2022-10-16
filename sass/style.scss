@@ -1,0 +1,62 @@
+@use "./fontweight" as fonts;
+@use "./header" as header;
+@use "./menudrop" as menu;
+@use "./background" as background;
+@use "./mainpage" as main;
+@use "./titles" as titles;
+@use "./maincard" as card;
+@use "./cardClient" as client;
+@use "./cardSocial" as social;
+@use "./footer" as footer;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 16.15%, #FEFEFE 28.45%), linear-gradient(44.76deg, #9BD9F2 52.34%, #FFD78A 117.16%);
+    background-size: 100% 400vh;
+    background-repeat: no-repeat;
+}
+
+body.dark{
+    background: linear-gradient(222.26deg, rgba(255, 215, 138, 0.2) 0%, rgba(34, 34, 34, 0) 18.14%), linear-gradient(180deg, rgba(105, 105, 105, 0) 15.57%, #080A0E 26.82%), linear-gradient(40.71deg, #004469 50.16%, #9BD5ED 142.82%);
+    background-size: 100% 400vh;
+    background-repeat: no-repeat;
+    background-color: #080A0E;
+}
+
+
+.darkMode{
+    display: none;
+}
+
+body.dark{
+    .sunMode{
+        display: none;
+    }
+    .darkMode{
+        display: inline;
+    }
+}
+
+@-webkit-keyframes change{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+    
+@keyframes change{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}

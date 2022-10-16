@@ -1,0 +1,144 @@
+@use "./fontweight" as fonts;
+
+@mixin titleh {
+    background: linear-gradient(270deg, #9BD9F2 15.33%, #F0A5A4 101.88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: fonts.$font-weight-extrabold;
+    background-size:400% 400%;
+    font-size: $font-h2-std;
+    padding-bottom: $font-h2-std*.5;
+    -webkit-animation:change 4s ease infinite;
+    animation:change 4s ease infinite;
+    @media (min-width: 1640px) and (orientation: landscape){
+        font-size: $font-h2-hd;
+        padding-bottom: $font-h2-hd*.5;
+    }
+    @media (min-width: 2240px) and (orientation: landscape){
+        font-size: $font-h2-2k;
+        padding-bottom: $font-h2-2k*.5;
+    }
+    @media (min-width: 3200px) and (orientation: landscape){
+        font-size: $font-h2-4k;
+        padding-bottom: $font-h2-4k*.5;
+    }
+    @media (max-width: 1639px) and (orientation: landscape){
+        font-size: $font-h2-std;
+        padding-bottom: $font-h2-std*.5;
+    }
+    @media (max-width: 1200px) and (orientation: portrait) {
+        font-size: $font-h2-std;
+        padding-bottom: $font-h2-std*.5;
+    }
+
+}
+
+@mixin titlep {
+    font-size: $font-p-std;
+    font-weight: fonts.$font-weight-bold;
+    color: $color-light;
+    @media (min-width: 1640px) and (orientation: landscape){
+        font-size: $font-p-hd;
+    }
+    @media (min-width: 2240px) and (orientation: landscape){
+        font-size: $font-p-2k;
+    }
+    @media (min-width: 3200px) and (orientation: landscape){
+        font-size: $font-p-4k;
+    }
+    @media (max-width: 1639px) and (orientation: landscape){
+        font-size: $font-p-std;
+        padding-bottom: $font-p-std*.5;
+    }
+    @media (max-width: 1200px) and (orientation: portrait) {
+        font-size: $font-p-std;
+        padding-bottom: $font-p-std*.5;
+    }
+}
+
+
+$font-h2-std: 1.75rem;
+$font-h2-hd: 2.125rem;
+$font-h2-2k: 3.25rem;
+$font-h2-4k: 4.25rem;
+
+$font-p-std: 1.125rem;
+$font-p-hd: 1.5rem;
+$font-p-2k: 2.25rem;
+$font-p-4k: 3rem;
+
+
+$color-light: #787D80;
+
+.title{
+    h2{
+        @include titleh();
+    }
+    p{
+        @include titlep();
+    }
+    padding: 0 5%;
+    margin-bottom: $font-p-std*2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @media (min-width: 1640px) and (orientation: landscape){
+        margin-bottom: $font-p-hd*2;
+    }
+    @media (min-width: 2240px) and (orientation: landscape){
+        margin-bottom: $font-p-2k*2;
+    }
+    @media (min-width: 3200px) and (orientation: landscape){
+        margin-bottom: $font-p-4k*2;
+    }
+    
+}
+
+.social{
+    h2{
+        @include titleh();
+    }
+    p{
+        @include titlep();
+    }
+
+
+}
+
+.clients{
+    h2{
+        @include titleh();
+    }
+    p{
+        @include titlep();
+    }
+
+}
+
+body.dark{
+    .title{
+        h2{
+            background: linear-gradient(269.89deg, #FFD78A -1.07%, #F0A5A4 98.73%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .social{
+        h2{
+            background: linear-gradient(269.89deg, #FFD78A -1.07%, #F0A5A4 98.73%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .clients{
+        h2{
+            background: linear-gradient(269.89deg, #FFD78A -1.07%, #F0A5A4 98.73%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+

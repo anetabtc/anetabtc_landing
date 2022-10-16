@@ -1,0 +1,343 @@
+@use "./fontweight" as fonts;
+
+@mixin pFooter {
+    font-size: $font-p-std;
+    font-weight: fonts.$font-weight-semibold;
+    margin-top: $font-p-std*.5;
+    @media (min-width: 1640px) and (orientation: landscape){
+        font-size: $font-p-hd;
+        margin-top: $font-p-hd*.5;
+    }
+    @media (min-width: 2240px) and (orientation: landscape){
+        font-size: $font-p-2k;
+        margin-top: $font-p-2k*.5;
+    }
+    @media (min-width: 3200px) and (orientation: landscape){
+        font-size: $font-p-4k;
+        margin-top: $font-p-4k*.5;
+    }
+    @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+        align-self: center;
+        text-align: center;
+        }
+    @media (max-width: 1044px) and (orientation: portrait) {
+        align-self: center;
+        text-align: center;
+        }
+}
+
+$margin-section-std: 100px;
+$margin-section-hd: $margin-section-std*1.25;
+$margin-section-2k: $margin-section-std*2;
+$margin-section-4k: $margin-section-std*3;
+
+$font-p-std: 1rem;
+$font-p-hd: 1.125rem;
+$font-p-2k: 1.75rem;
+$font-p-4k: 2.375rem;
+
+$font-h4-std: 1.125rem;
+$font-h4-hd: 1.25rem;
+$font-h4-2k: 2rem;
+$font-h4-4k: 2.625rem;
+
+$icon-std: 1.5rem;
+$icon-hd: 2rem;
+$icon-2k: 3rem;
+$icon-4k: 4rem;
+
+$primary-color: #000000;
+$secundary-color: #ffffff;
+$light-color: #C2CAD1;
+
+$transition-1: 0.15s;
+
+footer {
+    margin-top: $margin-section-std;
+    background:linear-gradient(276.53deg, rgba(255, 255, 255, 0.5) -3.61%, rgba(255, 255, 255, 0) 62.8%), linear-gradient(87.46deg, #9BD9F2 -4.05%, #FFD78A 165.55%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 1640px) and (orientation: landscape){
+        margin-top: $margin-section-hd;
+    }
+    @media (min-width: 2240px) and (orientation: landscape){
+        margin-top: $margin-section-2k;
+    }
+    @media (min-width: 3200px) and (orientation: landscape){
+        margin-top: $margin-section-4k;
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        padding: $font-h4-std;
+        @media (min-width: 1640px) and (orientation: landscape){
+            padding: $font-h4-hd;
+        }
+        @media (min-width: 2240px) and (orientation: landscape){
+            padding: $font-h4-2k;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            padding: $font-h4-4k;
+            width: 3200px;
+        }
+        @media (max-width: 1499px) and (orientation: landscape){
+            flex-direction: column;
+        }
+        @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+            flex-direction: column;
+            padding: 0% $font-h4-std;
+            align-items: center;
+        }
+        @media (max-width: 1044px) and (orientation: portrait) {
+            flex-direction: column;
+            padding: 0% $font-h4-std;
+            align-items: center;
+        }
+        }
+
+    .foot{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+        @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+            flex-direction: column;
+            padding-top: $font-p-std*1.5;
+        }
+        @media (max-width: 1044px) and (orientation: portrait) {
+            flex-direction: column;
+            padding-top: $font-p-std*1.5;
+        }
+    }
+    
+    
+    article{
+        width: 30%;
+        height: 100%;
+        @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+            width: 100%;
+        }
+        @media (max-width: 1044px) and (orientation: portrait) {
+            width: 100%;
+        }
+    }
+
+    .logoFooter{
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+            justify-content: center;
+            align-items: center;
+        }
+        @media (max-width: 1044px) and (orientation: portrait) {
+            justify-content: center;
+            align-items: center;
+        }
+
+        img{
+            height: $icon-std;
+            @media (min-width: 1640px) and (orientation: landscape){
+                height: $icon-hd;
+            }
+            @media (min-width: 2240px) and (orientation: landscape){
+                height: $icon-2k;
+            }
+            @media (min-width: 3200px) and (orientation: landscape){
+                height: $icon-4k;
+            }
+
+        }
+        p { @include pFooter();
+            @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+                padding: 0 15%;   
+            }}
+            @media (max-width: 1044px) and (orientation: portrait) {
+                padding: 0 5%;
+            }
+        }
+    
+
+    .rights{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: $font-p-std*.5;
+        @media (min-width: 1640px) and (orientation: landscape){
+            margin-top: $font-p-hd*.5;
+        }
+        @media (min-width: 2240px) and (orientation: landscape){
+            margin-top: $font-p-2k*.5;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            margin-top: $font-p-4k*.5;
+        }
+        @media (max-width: 1499px) and (orientation: landscape){
+            align-items: flex-start;
+        }
+        p{ @include pFooter();}
+    }
+
+    nav{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: $font-p-std;
+        }
+        @media (max-width: 1044px) and (orientation: portrait) {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: $font-p-std;
+        }
+    }
+
+    ul{
+        @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: $font-p-std 0;
+        }
+        @media (max-width: 1044px) and (orientation: portrait) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: $font-p-std 0;
+        }
+    }
+
+    h4{
+        font-weight: fonts.$font-weight-bold;
+        font-size: $font-h4-std;
+        margin-bottom: $font-h4-std;
+        color: $primary-color;
+        @media (min-width: 1640px) and (orientation: landscape){
+            font-size: $font-h4-hd;
+            margin-bottom: $font-h4-hd;
+        }
+        @media (min-width: 2240px) and (orientation: landscape){
+            font-size: $font-h4-2k;
+            margin-bottom: $font-h4-2k;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            font-size: $font-h4-4k;
+            margin-bottom: $font-h4-4k;
+        }
+    }
+
+
+    li{
+        font-weight: fonts.$font-weight-bold;
+        font-size: $font-p-std;
+        margin-bottom: $font-p-std;
+        color: $primary-color;
+        transition: $transition-1;
+        &:hover{
+            cursor: pointer;
+            color: #074A6F;
+        }
+        @media (min-width: 1640px) and (orientation: landscape){
+            font-size: $font-p-hd;
+            margin-bottom: $font-p-hd;
+        }
+        @media (min-width: 2240px) and (orientation: landscape){
+            font-size: $font-p-2k;
+            margin-bottom: $font-p-2k;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            font-size: $font-p-4k;
+            margin-bottom: $font-p-4k;
+        }
+    }
+
+    section{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+            width: 100%;
+            margin-bottom: $font-h4-std;
+        }
+        @media (max-width: 1044px) and (orientation: portrait) {
+            width: 100%;
+            margin-bottom: $font-h4-std;
+        }  
+    }
+
+    .icons{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: $icon-std;
+        gap: $icon-std;
+        @media (min-width: 1640px) and (orientation: landscape){
+            margin-top: 0;
+        }
+        @media (max-width: 1499px) and (orientation: landscape){
+            margin-top: 0;
+            justify-content: flex-start;
+        }
+        @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+            justify-content: center;
+        }
+        @media (max-width: 1044px) and (orientation: portrait) {
+            justify-content: center;
+            margin-top: 0;
+        }
+        i{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            transition: 0.15s;
+            &:hover{
+                scale: 1.1;
+            }
+        }
+        img{
+            height: $icon-std;
+            width: $icon-std;
+
+            @media (min-width: 1640px) and (orientation: landscape){
+                height: $icon-hd;
+                width: $icon-hd;
+            }
+            @media (min-width: 2240px) and (orientation: landscape){
+                height: $icon-2k;
+                width: $icon-2k;
+            }
+            @media (min-width: 3200px) and (orientation: landscape){
+                height: $icon-4k;
+                width: $icon-4k;
+            }
+        }
+
+    }   
+}
+
+body.dark footer {
+    background:linear-gradient(86.87deg, #074A6F -3.53%, #FFD78A 313.22%);
+    h4{
+        color: $secundary-color;
+    }
+    p {
+        color: $light-color;
+    }
+    li{
+        color: $light-color;
+        &:hover{
+            color: #FFD78A;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@use "./fontweight" as fonts;
+@use "./header" as header;
+@use "./menudrop" as menu;
+@use "./mainpage" as main;
+@use "./background" as background;
+@use "./maincard" as cards;
+@use "./footer" as footer;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+body{
+    width: 100%;
+    background: linear-gradient(181.25deg, rgba(255, 255, 255, 0) 41.55%, #FFFFFF 152.92%), linear-gradient(77.15deg, rgba(228, 244, 252, 0.2) 53.02%, rgba(255, 215, 138, 0.2) 89.5%), linear-gradient(154.49deg, rgba(255, 255, 255, 0) 20.36%, #FEFEFE 106.02%), linear-gradient(9.62deg, #9BD9F2 -0.79%, #BBA9E7 165.05%);
+    background-size: 100% 100%;
+}
+
+body.dark {
+    background: linear-gradient(359.35deg, #000000 -10.5%, rgba(0, 0, 0, 0) 67.33%), linear-gradient(0deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44)), linear-gradient(9.62deg, #339AD3 -0.79%, #BBA9E7 165.05%), linear-gradient(179.11deg, rgba(0, 0, 0, 0) 43.53%, #000000 100.41%), linear-gradient(77.15deg, rgba(51, 154, 211, 0.2) 53.02%, rgba(255, 215, 138, 0.2) 89.5%), linear-gradient(154.49deg, rgba(0, 0, 0, 0) 20.36%, #000000 106.02%), linear-gradient(9.62deg, #339AD3 -0.79%, #7F61B9 165.05%);
+    background-size: 100% 100%;
+}
+
+.darkMode{
+    display: none;
+}
+
+body.dark .sunMode{
+    display: none;
+}
+
+body.dark .darkMode{
+    display: inline;
+}
