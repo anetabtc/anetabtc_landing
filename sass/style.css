@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap");
-@media (min-width: 3200px) and (orientation: landscape) {
+@media (min-width: 2000px) and (orientation: landscape) {
   .main {
     display: flex;
     flex-direction: column;
@@ -13,9 +13,9 @@
   height: 88px;
   padding: 24px;
 }
-@media (min-width: 3200px) and (orientation: landscape) {
+@media (min-width: 2000px) and (orientation: landscape) {
   .main header {
-    width: 3200px;
+    width: 2000px;
   }
 }
 @media (max-width: 1044px) and (orientation: portrait) {
@@ -72,17 +72,9 @@
     border-radius: 0.45rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
+@media (min-width: 2000px) and (orientation: landscape) {
   .menu {
-    width: 22.75rem;
-    border-radius: 0.7rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .menu {
-    right: calc((100vw - 3200px) / 2 + 95px);
-    width: 30.875rem;
-    border-radius: 0.95rem;
+    right: calc((100vw - 2000px) / 2 + 95px);
   }
 }
 @media (max-width: 1044px) and (orientation: portrait) {
@@ -99,16 +91,6 @@
     padding: 0.3375rem 0;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  .menu ul {
-    padding: 0.525rem 0;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .menu ul {
-    padding: 0.7125rem 0;
-  }
-}
 .menu li {
   font-weight: 700;
   font-size: 1rem;
@@ -122,20 +104,6 @@
     padding-left: 1.125rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  .menu li {
-    font-size: 1.75rem;
-    margin: 1.3125rem 0;
-    padding-left: 1.75rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .menu li {
-    font-size: 2.375rem;
-    margin: 1.78125rem 0;
-    padding-left: 2.375rem;
-  }
-}
 .menu hr {
   border: none;
   border-bottom: #E0AD00 0.125rem solid;
@@ -145,18 +113,6 @@
   .menu hr {
     border-bottom: #E0AD00 0.140625rem solid;
     width: 2.25rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  .menu hr {
-    border-bottom: #E0AD00 0.21875rem solid;
-    width: 3.5rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .menu hr {
-    border-bottom: #E0AD00 0.296875rem solid;
-    width: 4.75rem;
   }
 }
 .menu a {
@@ -195,16 +151,6 @@ body.dark .menu hr {
     border-bottom: #447890 0.140625rem solid;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  body.dark .menu hr {
-    border-bottom: #447890 0.21875rem solid;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  body.dark .menu hr {
-    border-bottom: #447890 0.296875rem solid;
-  }
-}
 
 .background {
   position: relative;
@@ -235,21 +181,9 @@ body.dark .menu hr {
     height: 500px;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
+@media (min-width: 2000px) and (orientation: landscape) {
   .background div {
-    top: 700px;
-  }
-  .background div img {
-    height: 700px;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .background div {
-    left: calc((100vw - 3200px) / 2);
-    top: 900px;
-  }
-  .background div img {
-    height: 900px;
+    left: calc((100vw - 2000px) / 2);
   }
 }
 
@@ -262,16 +196,10 @@ body.dark .menu hr {
     top: 120px;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  .background2 div {
-    top: 180px;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
+@media (min-width: 2000px) and (orientation: landscape) {
   .background2 div {
     left: auto;
-    right: calc((100vw - 3200px) / 2);
-    top: 250px;
+    right: calc((100vw - 2000px) / 2);
   }
 }
 
@@ -282,9 +210,9 @@ main {
   margin: 0 10%;
   min-height: calc(100vh - 88px);
 }
-@media (min-width: 3200px) and (orientation: landscape) {
+@media (min-width: 2000px) and (orientation: landscape) {
   main {
-    width: 2700px;
+    width: 1600px;
   }
 }
 main .articleLeft {
@@ -328,20 +256,6 @@ main .articleLeft h2 {
     padding: 1.275rem 0px;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  main .articleLeft h2 {
-    font-size: 6.25rem;
-    line-height: 7.5rem;
-    padding: 1.875rem 0px;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  main .articleLeft h2 {
-    font-size: 8.25rem;
-    line-height: 9.9rem;
-    padding: 2.475rem 0px;
-  }
-}
 @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px) {
   main .articleLeft h2 {
     font-size: 2.25rem;
@@ -375,18 +289,6 @@ main .articleLeft h1 {
     margin-bottom: 1.75rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  main .articleLeft h1 {
-    font-size: 2.75rem;
-    margin-bottom: 2.75rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  main .articleLeft h1 {
-    font-size: 3.5rem;
-    margin-bottom: 3.5rem;
-  }
-}
 @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px) {
   main .articleLeft h1 {
     font-size: 1.25rem;
@@ -413,16 +315,6 @@ main .articleLeft .buttons {
 @media (min-width: 1640px) and (orientation: landscape) {
   main .articleLeft .buttons {
     gap: 1.25rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  main .articleLeft .buttons {
-    gap: 2rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  main .articleLeft .buttons {
-    gap: 2.625rem;
   }
 }
 @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px) {
@@ -469,24 +361,6 @@ main .articleLeft .buttons .button:hover {
     width: 12.5rem;
     height: 2.75rem;
     box-shadow: 0px 0px 0.3125rem 0px rgba(0, 0, 0, 0.25);
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  main .articleLeft .buttons .button {
-    font-size: 2rem;
-    border-radius: 1.2rem;
-    width: 20rem;
-    height: 4.4rem;
-    box-shadow: 0px 0px 0.5rem 0px rgba(0, 0, 0, 0.25);
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  main .articleLeft .buttons .button {
-    font-size: 2.625rem;
-    border-radius: 1.575rem;
-    width: 26.25rem;
-    height: 5.775rem;
-    box-shadow: 0px 0px 0.65625rem 0px rgba(0, 0, 0, 0.25);
   }
 }
 @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px) {
@@ -536,18 +410,6 @@ main .articleRight img {
     margin-bottom: 1.75rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  main .articleRight img {
-    width: 610px;
-    margin-bottom: 2.75rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  main .articleRight img {
-    width: 780px;
-    margin-bottom: 3.5rem;
-  }
-}
 
 body.dark .articleLeft h2 {
   background: linear-gradient(270deg, #9BB3F2 15.33%, #F0A5A4 101.88%);
@@ -567,16 +429,6 @@ body.dark .buttons .button {
 @media (min-width: 1640px) and (orientation: landscape) {
   body.dark .buttons .button {
     box-shadow: 0px 0px 0.3125rem 0px rgba(255, 255, 255, 0.25);
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  body.dark .buttons .button {
-    box-shadow: 0px 0px 0.5rem 0px rgba(255, 255, 255, 0.25);
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  body.dark .buttons .button {
-    box-shadow: 0px 0px 0.65625rem 0px rgba(255, 255, 255, 0.25);
   }
 }
 body.dark .buttons .button2 {
@@ -608,18 +460,6 @@ body.dark .buttons .button2 {
     padding-bottom: 1.0625rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  .title h2 {
-    font-size: 3.25rem;
-    padding-bottom: 1.625rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .title h2 {
-    font-size: 4.25rem;
-    padding-bottom: 2.125rem;
-  }
-}
 @media (max-width: 1639px) and (orientation: landscape) {
   .title h2 {
     font-size: 1.75rem;
@@ -642,16 +482,6 @@ body.dark .buttons .button2 {
     font-size: 1.5rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  .title p {
-    font-size: 2.25rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .title p {
-    font-size: 3rem;
-  }
-}
 @media (max-width: 1639px) and (orientation: landscape) {
   .title p {
     font-size: 1.125rem;
@@ -667,16 +497,6 @@ body.dark .buttons .button2 {
 @media (min-width: 1640px) and (orientation: landscape) {
   .title {
     margin-bottom: 3rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  .title {
-    margin-bottom: 4.5rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .title {
-    margin-bottom: 6rem;
   }
 }
 
@@ -695,18 +515,6 @@ body.dark .buttons .button2 {
   .social h2 {
     font-size: 2.125rem;
     padding-bottom: 1.0625rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  .social h2 {
-    font-size: 3.25rem;
-    padding-bottom: 1.625rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .social h2 {
-    font-size: 4.25rem;
-    padding-bottom: 2.125rem;
   }
 }
 @media (max-width: 1639px) and (orientation: landscape) {
@@ -729,16 +537,6 @@ body.dark .buttons .button2 {
 @media (min-width: 1640px) and (orientation: landscape) {
   .social p {
     font-size: 1.5rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  .social p {
-    font-size: 2.25rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .social p {
-    font-size: 3rem;
   }
 }
 @media (max-width: 1639px) and (orientation: landscape) {
@@ -771,18 +569,6 @@ body.dark .buttons .button2 {
     padding-bottom: 1.0625rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  .clients h2 {
-    font-size: 3.25rem;
-    padding-bottom: 1.625rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .clients h2 {
-    font-size: 4.25rem;
-    padding-bottom: 2.125rem;
-  }
-}
 @media (max-width: 1639px) and (orientation: landscape) {
   .clients h2 {
     font-size: 1.75rem;
@@ -803,16 +589,6 @@ body.dark .buttons .button2 {
 @media (min-width: 1640px) and (orientation: landscape) {
   .clients p {
     font-size: 1.5rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  .clients p {
-    font-size: 2.25rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .clients p {
-    font-size: 3rem;
   }
 }
 @media (max-width: 1639px) and (orientation: landscape) {
@@ -862,18 +638,6 @@ body.dark .clients h2 {
   .gcards {
     gap: 75.855px;
     margin-bottom: 151.71px;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  .gcards {
-    gap: 97.5px;
-    margin-bottom: 195px;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .gcards {
-    gap: 162.5px;
-    margin-bottom: 325px;
   }
 }
 @media (max-width: 1639px) and (orientation: landscape) {
@@ -934,24 +698,6 @@ body.dark .clients h2 {
     padding: 1.5rem 1.5rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  .gcards .card {
-    border-radius: 27.7875px;
-    width: 487.5px;
-    height: 633.75px;
-    box-shadow: 0px 0px 73.125px rgba(0, 0, 0, 0.25);
-    padding: 2.25rem 2.25rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .gcards .card {
-    border-radius: 46.3125px;
-    width: 812.5px;
-    height: 1056.25px;
-    box-shadow: 0px 0px 121.875px rgba(0, 0, 0, 0.25);
-    padding: 3rem 3rem;
-  }
-}
 @media (max-width: 1250px) and (orientation: landscape) {
   .gcards .card {
     border-radius: 14.82px;
@@ -994,18 +740,6 @@ body.dark .clients h2 {
     height: 212.394px;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  .gcards .card img {
-    width: 273px;
-    height: 273px;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .gcards .card img {
-    width: 455px;
-    height: 455px;
-  }
-}
 .gcards .card h3 {
   font-size: 1.25rem;
   font-weight: 700;
@@ -1016,16 +750,6 @@ body.dark .clients h2 {
     font-size: 1.5rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  .gcards .card h3 {
-    font-size: 2.25rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .gcards .card h3 {
-    font-size: 3rem;
-  }
-}
 .gcards .card p {
   font-weight: 600;
   text-align: center;
@@ -1034,16 +758,6 @@ body.dark .clients h2 {
 @media (min-width: 1640px) and (orientation: landscape) {
   .gcards .card p {
     font-size: 1rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  .gcards .card p {
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .gcards .card p {
-    font-size: 2.125rem;
   }
 }
 
@@ -1075,20 +789,6 @@ body.dark .card p {
     gap: 75.855px;
     margin-bottom: 151.71px;
     width: 1400px;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  .groupClients {
-    gap: 97.5px;
-    margin-bottom: 195px;
-    width: 1700px;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .groupClients {
-    gap: 162.5px;
-    margin-bottom: 325px;
-    width: 2800px;
   }
 }
 @media (max-width: 1639px) and (orientation: landscape) {
@@ -1143,22 +843,6 @@ body.dark .card p {
     width: 379.275px;
     height: 493.0575px;
     box-shadow: 0px 0px 56.89125px rgba(0, 0, 0, 0.25);
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  .groupClients .cardClient {
-    border-radius: 27.7875px;
-    width: 487.5px;
-    height: 633.75px;
-    box-shadow: 0px 0px 73.125px rgba(0, 0, 0, 0.25);
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .groupClients .cardClient {
-    border-radius: 46.3125px;
-    width: 812.5px;
-    height: 1056.25px;
-    box-shadow: 0px 0px 121.875px rgba(0, 0, 0, 0.25);
   }
 }
 @media (max-width: 1250px) and (orientation: landscape) {
@@ -1217,16 +901,6 @@ body.dark .cardClient {
 @media (min-width: 1640px) and (orientation: landscape) {
   .groupSocial {
     gap: 42.012px;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  .groupSocial {
-    gap: 54px;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .groupSocial {
-    gap: 90px;
   }
 }
 @media (max-width: 1200px) and (orientation: landscape) {
@@ -1299,24 +973,6 @@ body.dark .cardClient {
     padding: 1.5rem 1.5rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  .groupSocial .cardSocial {
-    width: 360px;
-    height: 406.8px;
-    box-shadow: 0px 0px 54px rgba(0, 0, 0, 0.25);
-    border-radius: 27.72px;
-    padding: 2.25rem 2.25rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .groupSocial .cardSocial {
-    width: 600px;
-    height: 678px;
-    box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.25);
-    border-radius: 46.2px;
-    padding: 3rem 3rem;
-  }
-}
 .groupSocial img {
   width: 72px;
   height: 72px;
@@ -1328,18 +984,6 @@ body.dark .cardClient {
     height: 84.024px;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  .groupSocial img {
-    width: 108px;
-    height: 108px;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .groupSocial img {
-    width: 180px;
-    height: 180px;
-  }
-}
 .groupSocial h3 {
   font-size: 1.25rem;
   font-weight: 700;
@@ -1347,16 +991,6 @@ body.dark .cardClient {
 @media (min-width: 1640px) and (orientation: landscape) {
   .groupSocial h3 {
     font-size: 1.5rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  .groupSocial h3 {
-    font-size: 2.25rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .groupSocial h3 {
-    font-size: 3rem;
   }
 }
 .groupSocial p {
@@ -1367,16 +1001,6 @@ body.dark .cardClient {
 @media (min-width: 1640px) and (orientation: landscape) {
   .groupSocial p {
     font-size: 1rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  .groupSocial p {
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .groupSocial p {
-    font-size: 2.125rem;
   }
 }
 
@@ -1402,16 +1026,6 @@ footer {
     margin-top: 125px;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  footer {
-    margin-top: 200px;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  footer {
-    margin-top: 300px;
-  }
-}
 footer .footer {
   width: 100%;
   display: flex;
@@ -1422,15 +1036,9 @@ footer .footer {
     padding: 1.25rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
+@media (min-width: 2000px) and (orientation: landscape) {
   footer .footer {
-    padding: 2rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  footer .footer {
-    padding: 2.625rem;
-    width: 3200px;
+    width: 2000px;
   }
 }
 @media (max-width: 1499px) and (orientation: landscape) {
@@ -1508,16 +1116,6 @@ footer .logoFooter img {
     height: 2rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  footer .logoFooter img {
-    height: 3rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  footer .logoFooter img {
-    height: 4rem;
-  }
-}
 footer .logoFooter p {
   font-size: 1rem;
   font-weight: 600;
@@ -1527,18 +1125,6 @@ footer .logoFooter p {
   footer .logoFooter p {
     font-size: 1.125rem;
     margin-top: 0.5625rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  footer .logoFooter p {
-    font-size: 1.75rem;
-    margin-top: 0.875rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  footer .logoFooter p {
-    font-size: 2.375rem;
-    margin-top: 1.1875rem;
   }
 }
 @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px) {
@@ -1575,16 +1161,6 @@ footer .rights {
     margin-top: 0.5625rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  footer .rights {
-    margin-top: 0.875rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  footer .rights {
-    margin-top: 1.1875rem;
-  }
-}
 @media (max-width: 1499px) and (orientation: landscape) {
   footer .rights {
     align-items: flex-start;
@@ -1599,18 +1175,6 @@ footer .rights p {
   footer .rights p {
     font-size: 1.125rem;
     margin-top: 0.5625rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  footer .rights p {
-    font-size: 1.75rem;
-    margin-top: 0.875rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  footer .rights p {
-    font-size: 2.375rem;
-    margin-top: 1.1875rem;
   }
 }
 @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px) {
@@ -1679,18 +1243,6 @@ footer h4 {
     margin-bottom: 1.25rem;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  footer h4 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  footer h4 {
-    font-size: 2.625rem;
-    margin-bottom: 2.625rem;
-  }
-}
 footer li {
   font-weight: 700;
   font-size: 1rem;
@@ -1706,18 +1258,6 @@ footer li:hover {
   footer li {
     font-size: 1.125rem;
     margin-bottom: 1.125rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  footer li {
-    font-size: 1.75rem;
-    margin-bottom: 1.75rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  footer li {
-    font-size: 2.375rem;
-    margin-bottom: 2.375rem;
   }
 }
 footer section {
@@ -1784,18 +1324,6 @@ footer .icons img {
   footer .icons img {
     height: 2rem;
     width: 2rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  footer .icons img {
-    height: 3rem;
-    width: 3rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  footer .icons img {
-    height: 4rem;
-    width: 4rem;
   }
 }
 

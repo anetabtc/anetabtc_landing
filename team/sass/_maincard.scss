@@ -4,28 +4,13 @@ $border-card-std: $width-card-std*0.04;
 $gap-std: $width-card-std*.2;
 $width-icon-card-std: $width-card-std*.12;
 
-$width-card-2k: $width-card-std*1.4;
-$border-card-2k: $width-card-2k*0.04;
-$gap-2k: $width-card-2k*.2;
-$width-icon-card-2k: $width-card-2k*.12;
-
-$width-card-4k: $width-card-std*2;
-$border-card-4k: $width-card-4k*0.04;
-$gap-4k: $width-card-4k*.2;
-$width-icon-card-4k: $width-card-4k*.12;
 
 
 $font-pmin-std: 0.875rem;
-$font-pmin-2k: 1.25rem;
-$font-pmin-4k: 1.75rem;
 
 $font-h3-std: 1.125rem;
-$font-h3-2k: 1.5rem;
-$font-h3-4k: 2.25rem;
 
 $font-h4-std: 1.125rem;
-$font-h4-2k: 1.5rem;
-$font-h4-4k: 2.25rem;
 
 $primary-color: #000000;
 $secundary-color: #ffffff;
@@ -46,16 +31,6 @@ $background-color-dark: #141B22;
 	gap: $gap-std;
 	flex-wrap: wrap;
 
-	@media (min-width: 2240px) and (orientation: landscape) {
-		max-width: 2000px;
-		gap: $gap-2k;
-	}
-
-	@media (min-width: 3200px) and (orientation: landscape) {
-		max-width: 2800px;
-		gap: $gap-4k;
-	}
-
 	.card {
 		background: $background-color-light;
 		width: $width-card-std;
@@ -63,15 +38,6 @@ $background-color-dark: #141B22;
 		border-radius: $border-card-std;
 		transition: $transition;
 
-		@media (min-width: 2240px) and (orientation: landscape) {
-			width: $width-card-2k;
-			border-radius: $border-card-2k;
-		}
-
-		@media (min-width: 3200px) and (orientation: landscape) {
-			width: $width-card-4k;
-			border-radius: $border-card-4k;
-		}
 
 		&:hover {
 			scale: 1.1;
@@ -83,16 +49,6 @@ $background-color-dark: #141B22;
 			img {
 				width: $width-icon-card-std;
 				border-radius: $border-card-std 0 0 0;
-
-				@media (min-width: 2240px) and (orientation: landscape) {
-					width: $width-icon-card-2k;
-					border-radius: $border-card-2k 0 0 0;
-				}
-
-				@media (min-width: 3200px) and (orientation: landscape) {
-					width: $width-icon-card-4k;
-					border-radius: $border-card-4k 0 0 0;
-				}
 			}
 
 			a {
@@ -113,15 +69,6 @@ $background-color-dark: #141B22;
 				font-size: $font-h4-std;
 				margin-top: $font-h4-std;
 
-				@media (min-width: 2240px) and (orientation: landscape) {
-					font-size: $font-h4-2k;
-					margin-top: $font-h4-2k;
-				}
-
-				@media (min-width: 3200px) and (orientation: landscape) {
-					font-size: $font-h4-4k;
-					margin-top: $font-h4-4k;
-				}
 			}
 
 			h3 {
@@ -130,15 +77,6 @@ $background-color-dark: #141B22;
 				font-size: $font-h3-std;
 				margin: $font-h3-std 0;
 
-				@media (min-width: 2240px) and (orientation: landscape) {
-					font-size: $font-h3-2k;
-					margin: $font-h3-2k 0;
-				}
-
-				@media (min-width: 3200px) and (orientation: landscape) {
-					font-size: $font-h3-4k;
-					margin: $font-h3-4k 0;
-				}
 			}
 
 			.description {
@@ -154,15 +92,6 @@ $background-color-dark: #141B22;
 					font-size: $font-pmin-std;
 					line-height: $font-pmin-std*1.5;
 
-					@media (min-width: 2240px) and (orientation: landscape) {
-						font-size: $font-pmin-2k;
-						line-height: $font-pmin-2k*1.5;
-					}
-
-					@media (min-width: 3200px) and (orientation: landscape) {
-						font-size: $font-pmin-4k;
-						line-height: $font-pmin-4k*1.5;
-					}
 				}
 			}
 		}

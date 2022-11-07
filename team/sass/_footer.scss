@@ -8,14 +8,6 @@
         font-size: $font-p-hd;
         margin-top: $font-p-hd*.5;
     }
-    @media (min-width: 2240px) and (orientation: landscape){
-        font-size: $font-p-2k;
-        margin-top: $font-p-2k*.5;
-    }
-    @media (min-width: 3200px) and (orientation: landscape){
-        font-size: $font-p-4k;
-        margin-top: $font-p-4k*.5;
-    }
     @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
         align-self: center;
         text-align: center;
@@ -28,23 +20,15 @@
 
 $margin-section-std: 100px;
 $margin-section-hd: $margin-section-std*1.25;
-$margin-section-2k: $margin-section-std*2;
-$margin-section-4k: $margin-section-std*3;
 
 $font-p-std: 1rem;
 $font-p-hd: 1.125rem;
-$font-p-2k: 1.75rem;
-$font-p-4k: 2.375rem;
 
 $font-h4-std: 1.125rem;
 $font-h4-hd: 1.25rem;
-$font-h4-2k: 2rem;
-$font-h4-4k: 2.625rem;
 
 $icon-std: 1.5rem;
 $icon-hd: 2rem;
-$icon-2k: 3rem;
-$icon-4k: 4rem;
 
 $primary-color: #000000;
 $secundary-color: #ffffff;
@@ -60,12 +44,6 @@ footer {
     @media (min-width: 1640px) and (orientation: landscape){
         margin-top: $margin-section-hd;
     }
-    @media (min-width: 2240px) and (orientation: landscape){
-        margin-top: $margin-section-2k;
-    }
-    @media (min-width: 3200px) and (orientation: landscape){
-        margin-top: $margin-section-4k;
-    }
     .footer{
         width: 100%;
         display: flex;
@@ -73,12 +51,8 @@ footer {
         @media (min-width: 1640px) and (orientation: landscape){
             padding: $font-h4-hd;
         }
-        @media (min-width: 2240px) and (orientation: landscape){
-            padding: $font-h4-2k;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            padding: $font-h4-4k;
-            width: 3200px;
+        @media (min-width: 2000px) and (orientation: landscape){
+            width: 2000px;
         }
         @media (max-width: 1499px) and (orientation: landscape){
             flex-direction: column;
@@ -139,12 +113,6 @@ footer {
             @media (min-width: 1640px) and (orientation: landscape){
                 height: $icon-hd;
             }
-            @media (min-width: 2240px) and (orientation: landscape){
-                height: $icon-2k;
-            }
-            @media (min-width: 3200px) and (orientation: landscape){
-                height: $icon-4k;
-            }
 
         }
         p { @include pFooter();
@@ -165,12 +133,6 @@ footer {
         margin-top: $font-p-std*.5;
         @media (min-width: 1640px) and (orientation: landscape){
             margin-top: $font-p-hd*.5;
-        }
-        @media (min-width: 2240px) and (orientation: landscape){
-            margin-top: $font-p-2k*.5;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            margin-top: $font-p-4k*.5;
         }
         @media (max-width: 1499px) and (orientation: landscape){
             align-items: flex-start;
@@ -225,14 +187,6 @@ footer {
             font-size: $font-h4-hd;
             margin-bottom: $font-h4-hd;
         }
-        @media (min-width: 2240px) and (orientation: landscape){
-            font-size: $font-h4-2k;
-            margin-bottom: $font-h4-2k;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            font-size: $font-h4-4k;
-            margin-bottom: $font-h4-4k;
-        }
     }
 
 
@@ -249,14 +203,6 @@ footer {
         @media (min-width: 1640px) and (orientation: landscape){
             font-size: $font-p-hd;
             margin-bottom: $font-p-hd;
-        }
-        @media (min-width: 2240px) and (orientation: landscape){
-            font-size: $font-p-2k;
-            margin-bottom: $font-p-2k;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            font-size: $font-p-4k;
-            margin-bottom: $font-p-4k;
         }
     }
 
@@ -311,14 +257,6 @@ footer {
             @media (min-width: 1640px) and (orientation: landscape){
                 height: $icon-hd;
                 width: $icon-hd;
-            }
-            @media (min-width: 2240px) and (orientation: landscape){
-                height: $icon-2k;
-                width: $icon-2k;
-            }
-            @media (min-width: 3200px) and (orientation: landscape){
-                height: $icon-4k;
-                width: $icon-4k;
             }
         }
 

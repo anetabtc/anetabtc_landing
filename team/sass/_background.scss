@@ -1,10 +1,6 @@
 $img-back-std: 350px;
-$img-back-2k: 500px;
-$img-back-4k: 650px;
 
 $img-ada-std: 600px;
-$img-ada-2k: 850px;
-$img-ada-4k: 1200px;
 
 .background {  
     position: relative;
@@ -23,16 +19,8 @@ $img-ada-4k: 1200px;
         img {
             height: $img-back-std;
         }
-        @media (min-width: 2240px) and (orientation: landscape){
-            img {
-                height: $img-back-2k;
-            }
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            right: calc((100vw - 3200px)/2 + 50px);
-            img {
-                height: $img-back-4k;
-            }
+        @media (min-width: 2000px) and (orientation: landscape){
+            right: calc((100vw - 2000px)/2 + 50px);
         }
     }
 }
@@ -44,16 +32,8 @@ $img-ada-4k: 1200px;
         img{
             height: $img-ada-std;
         }
-        @media (min-width: 2240px) and (orientation: landscape){
-            img{
-                height: $img-ada-2k;
-            }
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            left: calc((100vw - 3200px)/2);
-            img{
-                height: $img-ada-4k;
-            }
+        @media (min-width: 2000px) and (orientation: landscape){
+            left: calc((100vw - 2000px)/2);
         }
     }
 }
@@ -62,12 +42,8 @@ $img-ada-4k: 1200px;
     div {
         top: -200px;
         left: 0;
-        @media (min-width: 2240px) and (orientation: landscape){
-            top: -250px;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            top: -300px;
-            left: calc((100vw - 3200px)/2);
+        @media (min-width: 2000px) and (orientation: landscape){
+            left: calc((100vw - 2000px)/2);
         }
     }
 }

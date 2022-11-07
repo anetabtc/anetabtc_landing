@@ -14,14 +14,6 @@
         font-size: $font-h2-hd;
         padding-bottom: $font-h2-hd*.5;
     }
-    @media (min-width: 2240px) and (orientation: landscape){
-        font-size: $font-h2-2k;
-        padding-bottom: $font-h2-2k*.5;
-    }
-    @media (min-width: 3200px) and (orientation: landscape){
-        font-size: $font-h2-4k;
-        padding-bottom: $font-h2-4k*.5;
-    }
     @media (max-width: 1639px) and (orientation: landscape){
         font-size: $font-h2-std;
         padding-bottom: $font-h2-std*.5;
@@ -40,12 +32,6 @@
     @media (min-width: 1640px) and (orientation: landscape){
         font-size: $font-p-hd;
     }
-    @media (min-width: 2240px) and (orientation: landscape){
-        font-size: $font-p-2k;
-    }
-    @media (min-width: 3200px) and (orientation: landscape){
-        font-size: $font-p-4k;
-    }
     @media (max-width: 1639px) and (orientation: landscape){
         font-size: $font-p-std;
         padding-bottom: $font-p-std*.5;
@@ -59,13 +45,9 @@
 
 $font-h2-std: 1.75rem;
 $font-h2-hd: 2.125rem;
-$font-h2-2k: 3.25rem;
-$font-h2-4k: 4.25rem;
 
 $font-p-std: 1.125rem;
 $font-p-hd: 1.5rem;
-$font-p-2k: 2.25rem;
-$font-p-4k: 3rem;
 
 
 $color-light: #787D80;
@@ -85,12 +67,6 @@ $color-light: #787D80;
     text-align: center;
     @media (min-width: 1640px) and (orientation: landscape){
         margin-bottom: $font-p-hd*2;
-    }
-    @media (min-width: 2240px) and (orientation: landscape){
-        margin-bottom: $font-p-2k*2;
-    }
-    @media (min-width: 3200px) and (orientation: landscape){
-        margin-bottom: $font-p-4k*2;
     }
     
 }

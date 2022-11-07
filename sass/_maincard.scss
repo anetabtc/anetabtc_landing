@@ -2,13 +2,9 @@
 
 $font-pmin-std: 0.875rem;
 $font-pmin-hd: 1rem;
-$font-pmin-2k: 1.5rem;
-$font-pmin-4k: 2.125rem;
 
 $font-h3-std: 1.25rem;
 $font-h3-hd: 1.5rem;
-$font-h3-2k: 2.25rem;
-$font-h3-4k: 3rem;
 
 $width-card-std: 325px;
 $height-card-std: $width-card-std*1.3;
@@ -22,17 +18,6 @@ $border-card-hd: $width-card-hd*0.057;
 $gap-hd: $width-card-hd*.2;
 $box-shadow-hd: 0px 0px $width-card-hd*.15 rgba(0, 0, 0, 0.25);
 
-$width-card-2k: $width-card-std*1.5;
-$height-card-2k: $width-card-2k*1.3;
-$border-card-2k: $width-card-2k*0.057;
-$gap-2k: $width-card-2k*.2;
-$box-shadow-2k: 0px 0px $width-card-2k*.15 rgba(0, 0, 0, 0.25);
-
-$width-card-4k: $width-card-std*2.5;
-$height-card-4k: $width-card-4k*1.3;
-$border-card-4k: $width-card-4k*0.057;
-$gap-4k: $width-card-4k*.2;
-$box-shadow-4k: 0px 0px $width-card-4k*.15 rgba(0, 0, 0, 0.25);
 
 $width-card-min: $width-card-std*0.8;
 $height-card-min: $width-card-min*1.3;
@@ -42,8 +27,6 @@ $box-shadow-min: 0px 0px $width-card-min*.15 rgba(0, 0, 0, 0.25);
 
 $image-std: $width-card-std*.56;
 $image-hd: $width-card-hd*.56;
-$image-2k: $width-card-2k*.56;
-$image-4k: $width-card-4k*.56;
 
 $transition: 0.25s;
 
@@ -67,15 +50,7 @@ $dark-color: #141B22;
     @media (min-width: 1640px) and (orientation: landscape){
         gap: $gap-hd;
         margin-bottom: $gap-hd*2;
-    }
-    @media (min-width: 2240px) and (orientation: landscape){
-        gap: $gap-2k;
-        margin-bottom: $gap-2k*2;
-    }
-    @media (min-width: 3200px) and (orientation: landscape){
-        gap: $gap-4k;
-        margin-bottom: $gap-4k*2;
-    }   
+    } 
     @media (max-width: 1639px) and (orientation: landscape){
         gap: $gap-std;
         margin-bottom: $gap-std*2;
@@ -122,20 +97,6 @@ $dark-color: #141B22;
             box-shadow: $box-shadow-hd;
             padding: $font-h3-hd $font-h3-hd;
         }
-        @media (min-width: 2240px) and (orientation: landscape){
-            border-radius: $border-card-2k;
-            width: $width-card-2k;
-            height: $height-card-2k;
-            box-shadow: $box-shadow-2k;
-            padding: $font-h3-2k $font-h3-2k;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            border-radius: $border-card-4k;
-            width: $width-card-4k;
-            height: $height-card-4k;
-            box-shadow: $box-shadow-4k;
-            padding: $font-h3-4k $font-h3-4k;
-        }
         @media (max-width: 1250px) and (orientation: landscape){
             border-radius: $border-card-min;
             width: $width-card-min;
@@ -168,14 +129,6 @@ $dark-color: #141B22;
                 width: $image-hd;
                 height: $image-hd;
             }
-            @media (min-width: 2240px) and (orientation: landscape){
-                width: $image-2k;
-                height: $image-2k;
-            }
-            @media (min-width: 3200px) and (orientation: landscape){
-                width: $image-4k;
-                height: $image-4k;
-            }
         }
 
         h3 {
@@ -184,12 +137,6 @@ $dark-color: #141B22;
             text-align: center;
             @media (min-width: 1640px) and (orientation: landscape){
                 font-size: $font-h3-hd;
-            }
-            @media (min-width: 2240px) and (orientation: landscape){
-                font-size: $font-h3-2k;
-            }
-            @media (min-width: 3200px) and (orientation: landscape){
-                font-size: $font-h3-4k;
             }
             
         }
@@ -200,12 +147,6 @@ $dark-color: #141B22;
             font-size: $font-pmin-std;
             @media (min-width: 1640px) and (orientation: landscape){
                 font-size: $font-pmin-hd;
-            }
-            @media (min-width: 2240px) and (orientation: landscape){
-                font-size: $font-pmin-2k;
-            }
-            @media (min-width: 3200px) and (orientation: landscape){
-                font-size: $font-pmin-4k;
             }
         }
     }

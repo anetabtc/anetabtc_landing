@@ -1,8 +1,7 @@
 
 $img-back-std: 390px;
 $img-back-hd: 500px;
-$img-back-2k: 700px;
-$img-back-4k: 900px;
+
 
 .background {  
     position: relative;
@@ -26,18 +25,8 @@ $img-back-4k: 900px;
                 height: $img-back-hd;
             }
         }
-        @media (min-width: 2240px) and (orientation: landscape){
-            top: $img-back-2k;
-            img{
-                height: $img-back-2k;
-            } 
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            left: calc((100vw - 3200px)/2);
-            top: $img-back-4k;
-            img{
-                height: $img-back-4k;
-            }
+        @media (min-width: 2000px) and (orientation: landscape){
+            left: calc((100vw - 2000px)/2);
         }
     }
 }
@@ -49,13 +38,9 @@ $img-back-4k: 900px;
         @media (min-width: 1640px) and (orientation: landscape){
             top: 120px;
         }
-        @media (min-width: 2240px) and (orientation: landscape){
-            top: 180px;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
+        @media (min-width: 2000px) and (orientation: landscape){
             left: auto;
-            right: calc((100vw - 3200px)/2);
-            top: 250px;
+            right: calc((100vw - 2000px)/2);
         }
     }
 }

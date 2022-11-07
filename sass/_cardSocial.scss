@@ -13,35 +13,18 @@ $border-card-hd: $width-card-hd*0.077;
 $gap-hd: $width-card-hd*.15;
 $box-shadow-hd: 0px 0px $width-card-hd*.15 rgba(0, 0, 0, 0.25);
 
-$width-card-2k: $width-card-std*1.5;
-$height-card-2k: $width-card-2k*1.13;
-$border-card-2k: $width-card-2k*0.077;
-$gap-2k: $width-card-2k*.15;
-$box-shadow-2k: 0px 0px $width-card-2k*.15 rgba(0, 0, 0, 0.25);
-
-$width-card-4k: $width-card-std*2.5;
-$height-card-4k: $width-card-4k*1.13;
-$border-card-4k: $width-card-4k*0.077;
-$gap-4k: $width-card-4k*.15;
-$box-shadow-4k: 0px 0px $width-card-4k*.15 rgba(0, 0, 0, 0.25);
 
 $transition: 0.25s;
 
 $image-std: $width-card-std*.3;
 $image-hd: $width-card-hd*.3;
-$image-2k: $width-card-2k*.3;
-$image-4k: $width-card-4k*.3;
 
 
 $font-pmin-std: 0.875rem;
 $font-pmin-hd: 1rem;
-$font-pmin-2k: 1.5rem;
-$font-pmin-4k: 2.125rem;
 
 $font-h3-std: 1.25rem;
 $font-h3-hd: 1.5rem;
-$font-h3-2k: 2.25rem;
-$font-h3-4k: 3rem;
 
 $primary-color: #000000;
 $secundary-color: #ffffff;
@@ -67,12 +50,6 @@ $medium-dark: $secundary-color;
     gap: $gap-std;
     @media (min-width: 1640px) and (orientation: landscape){
         gap: $gap-hd;
-    }
-    @media (min-width: 2240px) and (orientation: landscape){
-        gap: $gap-2k;
-    }
-    @media (min-width: 3200px) and (orientation: landscape){
-        gap: $gap-4k;
     }
     @media (max-width: 1200px) and (orientation: landscape){
         width: 599px;
@@ -134,20 +111,6 @@ $medium-dark: $secundary-color;
             border-radius: $border-card-hd;
             padding: $font-h3-hd $font-h3-hd;
         }
-        @media (min-width: 2240px) and (orientation: landscape){
-            width: $width-card-2k;
-            height: $height-card-2k;
-            box-shadow: $box-shadow-2k;
-            border-radius: $border-card-2k;
-            padding: $font-h3-2k $font-h3-2k;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            width: $width-card-4k;
-            height: $height-card-4k;
-            box-shadow: $box-shadow-4k;
-            border-radius: $border-card-4k;
-            padding: $font-h3-4k $font-h3-4k;
-        }
       }
 
     img {
@@ -158,14 +121,6 @@ $medium-dark: $secundary-color;
             width: $image-hd;
             height: $image-hd;
         }
-        @media (min-width: 2240px) and (orientation: landscape){
-            width: $image-2k;
-            height: $image-2k;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            width: $image-4k;
-            height: $image-4k;
-        }
     }
 
     h3 {
@@ -173,12 +128,6 @@ $medium-dark: $secundary-color;
         font-weight: fonts.$font-weight-bold;
         @media (min-width: 1640px) and (orientation: landscape){
             font-size: $font-h3-hd;
-        }
-        @media (min-width: 2240px) and (orientation: landscape){
-            font-size: $font-h3-2k;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            font-size: $font-h3-4k;
         }
         
     }
@@ -189,12 +138,6 @@ $medium-dark: $secundary-color;
         font-size: $font-pmin-std;
         @media (min-width: 1640px) and (orientation: landscape){
             font-size: $font-pmin-hd;
-        }
-        @media (min-width: 2240px) and (orientation: landscape){
-            font-size: $font-pmin-2k;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            font-size: $font-pmin-4k;
         }
     }
 }

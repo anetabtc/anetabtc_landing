@@ -7,7 +7,7 @@ $height-min: 68px;
 $padding-min: 16px;
 
 .main{
-    @media (min-width: 3200px) and (orientation: landscape){
+    @media (min-width: 2000px) and (orientation: landscape){
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -18,8 +18,8 @@ $padding-min: 16px;
         justify-content: space-between;
         height: $height-std;
         padding: $padding-std;
-        @media (min-width: 3200px) and (orientation: landscape){
-            width: 3200px;
+        @media (min-width: 2000px) and (orientation: landscape){
+            width: 2000px;
         }
         @media (max-width: 1044px) and (orientation: portrait) {
             height: $height-min;

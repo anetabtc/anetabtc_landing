@@ -7,20 +7,14 @@ $height-std: calc(100vh - header.$height-std);
 $font-h2-min: 2.25rem;
 $font-h2-std: 3.5rem;
 $font-h2-hd: 4.25rem;
-$font-h2-2k: 6.25rem;
-$font-h2-4k: 8.25rem;
 
 $font-h1-min: 1.25rem;
 $font-h1-std: 1.5rem;
 $font-h1-hd: 1.75rem;
-$font-h1-2k: 2.75rem;
-$font-h1-4k: 3.5rem;
 
 $font-btn-min: 1rem;
 $font-btn-std: 1.125rem;
 $font-btn-hd: 1.25rem;
-$font-btn-2k: 2rem;
-$font-btn-4k: 2.625rem;
 
 $width-btn-min: $font-btn-min*10;
 $height-btn-min: $font-btn-min*2.2;
@@ -40,22 +34,9 @@ $box-shadow-light-hd: 0px 0px $font-btn-hd*.25 0px rgba(0, 0, 0, 0.25);
 $box-shadow-dark-hd: 0px 0px $font-btn-hd*.25 0px rgba(255, 255, 255, 0.25);
 $border-btn-hd: $font-btn-hd*.6;
 
-$width-btn-2k: $font-btn-2k*10;
-$height-btn-2k: $font-btn-2k*2.2;
-$box-shadow-light-2k: 0px 0px $font-btn-2k*.25 0px rgba(0, 0, 0, 0.25);
-$box-shadow-dark-2k: 0px 0px $font-btn-2k*.25 0px rgba(255, 255, 255, 0.25);
-$border-btn-2k: $font-btn-2k*.6;
-
-$width-btn-4k: $font-btn-4k*10;
-$height-btn-4k: $font-btn-4k*2.2;
-$box-shadow-light-4k: 0px 0px $font-btn-4k*.25 0px rgba(0, 0, 0, 0.25);
-$box-shadow-dark-4k: 0px 0px $font-btn-4k*.25 0px rgba(255, 255, 255, 0.25);
-$border-btn-4k: $font-btn-4k*.6;
 
 $width-img-main-std: 310px;
 $width-img-main-hd: 475px;
-$width-img-main-2k: 610px;
-$width-img-main-4k: 780px;
 
 
 $transition: 0.25s;
@@ -70,8 +51,8 @@ main {
     justify-content: space-between;
     margin: 0 10%;
     min-height: $height-std;
-    @media (min-width: 3200px) and (orientation: landscape){
-        width: 2700px;
+    @media (min-width: 2000px) and (orientation: landscape){
+        width: 1600px;
     }
 
     .articleLeft {
@@ -109,16 +90,6 @@ main {
                 line-height: $font-h2-hd*1.2;
                 padding: $font-h2-hd*.3 0px; 
             }
-            @media (min-width: 2240px) and (orientation: landscape){
-                font-size: $font-h2-2k;
-                line-height: $font-h2-2k*1.2;
-                padding: $font-h2-2k*.3 0px; 
-            }
-            @media (min-width: 3200px) and (orientation: landscape){
-                font-size: $font-h2-4k;
-                line-height: $font-h2-4k*1.2;
-                padding: $font-h2-4k*.3 0px;
-            }
             @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
                 font-size: $font-h2-min;
                 line-height: $font-h2-min*1.2;
@@ -144,14 +115,6 @@ main {
                 font-size: $font-h1-hd;
                 margin-bottom: $font-h1-hd;
             }
-            @media (min-width: 2240px) and (orientation: landscape){
-                font-size: $font-h1-2k;
-                margin-bottom: $font-h1-2k; 
-            }
-            @media (min-width: 3200px) and (orientation: landscape){
-                font-size: $font-h1-4k;
-                margin-bottom: $font-h1-4k;
-            }
             @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
                 font-size: $font-h1-min;
                 margin-bottom: $font-h1-min;
@@ -172,12 +135,6 @@ main {
             gap: $font-btn-std;
             @media (min-width: 1640px) and (orientation: landscape){
                 gap: $font-btn-hd;
-            }
-            @media (min-width: 2240px) and (orientation: landscape){
-                gap: $font-btn-2k;
-            }
-            @media (min-width: 3200px) and (orientation: landscape){
-                gap: $font-btn-4k;
             }
             @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
                 gap: $font-btn-min;
@@ -216,20 +173,6 @@ main {
                     width: $width-btn-hd;
                     height: $height-btn-hd;
                     box-shadow: $box-shadow-light-hd;
-                }
-                @media (min-width: 2240px) and (orientation: landscape){
-                    font-size: $font-btn-2k;
-                    border-radius: $border-btn-2k;
-                    width: $width-btn-2k;
-                    height: $height-btn-2k;
-                    box-shadow: $box-shadow-light-2k;
-                }
-                @media (min-width: 3200px) and (orientation: landscape){
-                    font-size: $font-btn-4k;
-                    border-radius: $border-btn-4k;
-                    width: $width-btn-4k;
-                    height: $height-btn-4k;
-                    box-shadow: $box-shadow-light-4k;
                 }
                 @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
                     font-size: $font-btn-min;
@@ -271,14 +214,6 @@ main {
                 margin-bottom: $font-h1-hd;
                 
             }
-            @media (min-width: 2240px) and (orientation: landscape){
-                width: $width-img-main-2k;
-                margin-bottom: $font-h1-2k;
-            }
-            @media (min-width: 3200px) and (orientation: landscape){
-                width: $width-img-main-4k;
-                margin-bottom: $font-h1-4k;
-            }
 
         }        
     }
@@ -302,12 +237,6 @@ body.dark{
             box-shadow: $box-shadow-dark-std;
             @media (min-width: 1640px) and (orientation: landscape){
                 box-shadow: $box-shadow-dark-hd;
-            }
-            @media (min-width: 2240px) and (orientation: landscape){
-                box-shadow: $box-shadow-dark-2k;
-            }
-            @media (min-width: 3200px) and (orientation: landscape){
-                box-shadow: $box-shadow-dark-4k;
             }
         }
         .button2{

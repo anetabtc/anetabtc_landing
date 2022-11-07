@@ -3,8 +3,6 @@
 
 $font-p-std: 1rem;
 $font-p-hd: 1.125rem;
-$font-p-2k: 1.75rem;
-$font-p-4k: 2.375rem;
 
 $transition: 0.3s;
 
@@ -29,14 +27,8 @@ $dark-hover: #FFD78A;
         width: $font-p-hd*13;
         border-radius: $font-p-hd*.4;
     }
-    @media (min-width: 2240px) and (orientation: landscape){
-        width: $font-p-2k*13;
-        border-radius: $font-p-2k*.4;
-    }
-    @media (min-width: 3200px) and (orientation: landscape){
-        right: calc((100vw - 3200px)/2 + 95px);
-        width: $font-p-4k*13;
-        border-radius: $font-p-4k*.4;
+    @media (min-width: 2000px) and (orientation: landscape){
+        right: calc((100vw - 2000px)/2 + 95px);
     }
     @media (max-width: 1044px) and (orientation: portrait) {
         right: 90px;
@@ -46,12 +38,6 @@ $dark-hover: #FFD78A;
         padding: $font-p-std*.3 0;
         @media (min-width: 1640px) and (orientation: landscape){
             padding: $font-p-hd*.3 0;
-        }
-        @media (min-width: 2240px) and (orientation: landscape){
-            padding: $font-p-2k*.3 0;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            padding: $font-p-4k*.3 0;
         }
     }
     li{
@@ -64,16 +50,6 @@ $dark-hover: #FFD78A;
             margin: $font-p-hd*.75 0;
             padding-left: $font-p-hd;
         }
-        @media (min-width: 2240px) and (orientation: landscape){
-            font-size: $font-p-2k;
-            margin: $font-p-2k*.75 0;
-            padding-left: $font-p-2k;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            font-size: $font-p-4k;
-            margin: $font-p-4k*.75 0;
-            padding-left: $font-p-4k;
-        }
     }
     hr{
         border: none;
@@ -82,14 +58,6 @@ $dark-hover: #FFD78A;
         @media (min-width: 1640px) and (orientation: landscape){
             border-bottom: #E0AD00 $font-p-hd*.125 solid;
             width: $font-p-hd*2;
-        }
-        @media (min-width: 2240px) and (orientation: landscape){
-            border-bottom: #E0AD00 $font-p-2k*.125 solid;
-            width: $font-p-2k*2;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            border-bottom: #E0AD00 $font-p-4k*.125 solid;
-            width: $font-p-4k*2;
         }
     }
     a {
@@ -125,12 +93,6 @@ body.dark{
             border-bottom: #447890 $font-p-std*.125 solid;
             @media (min-width: 1640px) and (orientation: landscape){
                 border-bottom: #447890 $font-p-hd*.125 solid;
-            }
-            @media (min-width: 2240px) and (orientation: landscape){
-                border-bottom: #447890 $font-p-2k*.125 solid;
-            }
-            @media (min-width: 3200px) and (orientation: landscape){
-                border-bottom: #447890 $font-p-4k*.125 solid;
             }
         }
     }
