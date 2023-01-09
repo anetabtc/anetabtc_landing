@@ -34,7 +34,7 @@ section {
                 width: 520px;
             }
             @media (max-width: 660px) {
-                width: 280px;
+                width: 90%;
                 padding: $font-h2-min;
             }
             header{
@@ -72,10 +72,11 @@ section {
                     p{
                         font-size: $font-p1-min;
                         line-height: $font-p1-min*1.5;
-                        width: 100%;
+                        width: 75%;
                     }
                     p:last-child{
-                        width: 100%;
+                        width: 85%;
+                        margin-top: $font-p1-min*1.5;
                     }
                 }
             }
@@ -126,6 +127,7 @@ section {
                     margin-bottom: $font-h4-std;
                     p{
                         font-size: $font-p-min;
+                        line-height: $font-p-min*1.5;
                     }
                     img{
                         height: $font-p-min;

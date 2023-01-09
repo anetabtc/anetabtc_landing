@@ -70,10 +70,10 @@ main .title h1 {
 }
 @media (max-width: 660px) {
   main .title {
-    width: 280px;
+    width: 90%;
   }
   main .title h1 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 }
 main div:last-child {
@@ -98,13 +98,13 @@ main div:last-child p {
 }
 @media (max-width: 660px) {
   main div:last-child {
-    width: 280px;
+    width: 85%;
   }
   main div:last-child h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   main div:last-child p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -139,7 +139,7 @@ section .group__cards .cards {
 }
 @media (max-width: 660px) {
   section .group__cards .cards {
-    width: 280px;
+    width: 90%;
     padding: 1.1rem;
   }
 }
@@ -179,10 +179,11 @@ section .group__cards .cards header p:last-child {
   section .group__cards .cards header p {
     font-size: 1rem;
     line-height: 1.5rem;
-    width: 100%;
+    width: 75%;
   }
   section .group__cards .cards header p:last-child {
-    width: 100%;
+    width: 85%;
+    margin-top: 1.5rem;
   }
 }
 section .group__cards .cards article .subtitle {
@@ -234,6 +235,7 @@ section .group__cards .cards article .direction {
 }
 section .group__cards .cards article .direction p {
   font-size: 0.75rem;
+  line-height: 1.125rem;
 }
 section .group__cards .cards article .direction img {
   height: 0.75rem;

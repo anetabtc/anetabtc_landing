@@ -6,9 +6,9 @@ $font-h1-std: 2.25rem;
 $font-h2-std: 1.5rem;
 $font-p-std: 1.125rem;
 
-$font-h1-min: 1.2rem;
-$font-h2-min: 1rem;
-$font-p-min: 0.8rem;
+$font-h1-min: 1.25rem;
+$font-h2-min: 1.2rem;
+$font-p-min: 1rem;
 
 
 main{
@@ -34,7 +34,7 @@ main{
             width: 600px;
         }
         @media (max-width: 660px) {
-            width: 280px;
+            width: 90%;
             h1 {
                 font-size: $font-h1-min;
             }
@@ -58,7 +58,7 @@ main{
             width: 600px;
         }
         @media (max-width: 660px) {
-            width: 280px;
+            width: 85%;
             h2 {
                 font-size: $font-h2-min;
             }
