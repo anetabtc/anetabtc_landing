@@ -14,8 +14,8 @@ header{
     nav{
         img{
             height: $height-std;
-            margin-top: $height-std*.5;
-            margin-left: $height-std*.5;
+            margin-top: $height-std;
+            margin-left: $height-std;
             @media (min-width: 2000px) and (orientation: landscape){
                 margin-left: calc((100vw - 2000px)/2 + $height-std*.5);
             }

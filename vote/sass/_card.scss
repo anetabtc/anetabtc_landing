@@ -108,7 +108,10 @@ section {
                 h4{
                     font-size: $font-h4-std;
                     margin-bottom: $font-h4-std;
-                    font-weight: fonts.$font-weight-semibold;
+                    font-weight: fonts.$font-weight-regular;
+                    span{
+                        font-weight: fonts.$font-weight-semibold;
+                    }
                 }
                 .direction{
                     position: relative;

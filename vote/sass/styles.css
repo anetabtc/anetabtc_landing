@@ -13,8 +13,8 @@
 }
 header nav img {
   height: 37px;
-  margin-top: 18.5px;
-  margin-left: 18.5px;
+  margin-top: 37px;
+  margin-left: 37px;
 }
 @media (min-width: 2000px) and (orientation: landscape) {
   header nav img {
@@ -55,13 +55,13 @@ main .title {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 3.4rem;
+  border-radius: 3.6rem;
   width: 800px;
-  height: 3.4rem;
+  height: 4.5rem;
 }
 main .title h1 {
-  font-size: 2.125rem;
-  font-weight: 700;
+  font-size: 2.25rem;
+  font-weight: 400;
 }
 @media (max-width: 900px) {
   main .title {
@@ -78,12 +78,12 @@ main .title h1 {
 }
 main div:last-child {
   width: 800px;
-  margin-bottom: 2.72rem;
+  margin-bottom: 2.88rem;
 }
 main div:last-child h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-top: 2.72rem;
+  margin-top: 2.88rem;
   margin-bottom: 1.5rem;
 }
 main div:last-child p {
@@ -215,6 +215,9 @@ section .group__cards .cards article .subtitle img {
 section .group__cards .cards article h4 {
   font-size: 1rem;
   margin-bottom: 1rem;
+  font-weight: 400;
+}
+section .group__cards .cards article h4 span {
   font-weight: 600;
 }
 section .group__cards .cards article .direction {
