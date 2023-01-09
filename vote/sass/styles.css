@@ -134,7 +134,7 @@ section .group__cards .cards {
 }
 @media (max-width: 900px) {
   section .group__cards .cards {
-    width: 500px;
+    width: 520px;
   }
 }
 @media (max-width: 660px) {
@@ -216,6 +216,7 @@ section .group__cards .cards article h4 {
   font-size: 1rem;
   margin-bottom: 1rem;
   font-weight: 400;
+  line-height: 1.2rem;
 }
 section .group__cards .cards article h4 span {
   font-weight: 600;

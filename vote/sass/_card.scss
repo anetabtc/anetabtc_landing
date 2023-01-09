@@ -31,7 +31,7 @@ section {
             border-radius: 20px;
             padding: $font-h2-std;
             @media (max-width: 900px) {
-                width: 500px;
+                width: 520px;
             }
             @media (max-width: 660px) {
                 width: 280px;
@@ -109,6 +109,7 @@ section {
                     font-size: $font-h4-std;
                     margin-bottom: $font-h4-std;
                     font-weight: fonts.$font-weight-regular;
+                    line-height: $font-h4-std*1.2;
                     span{
                         font-weight: fonts.$font-weight-semibold;
                     }
