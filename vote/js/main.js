@@ -58,7 +58,7 @@ async function countErgo1(){
             if(index == 0){
                 token = tokens[i]
                 cant = (tokens[i].amount)/1000000;
-                cant = new Intl.NumberFormat("de-DE").format(cant);
+                cant = new Intl.NumberFormat("en").format(cant);
                 break
             }
             }
@@ -80,7 +80,7 @@ async function countErgo2(){
             if(index == 0){
                 token = tokens[i]
                 cant2 = (tokens[i].amount)/1000000;
-                cant2 = new Intl.NumberFormat("de-DE").format(cant2);
+                cant2 = new Intl.NumberFormat("en").format(cant2);
                 break
             }
             }
@@ -104,7 +104,7 @@ async function countCardano1(){
             if(index==0){
                 token = tokens[i];
                 cantToken = token.quantity;
-                cantToken = new Intl.NumberFormat("de-DE").format(cantToken);
+                cantToken = new Intl.NumberFormat("en").format(cantToken);
                 break
             }
         }
@@ -127,7 +127,7 @@ async function countCardano2(){
             if(index==0){
                 token = tokens[i];
                 cantToken2 = token.quantity;
-                cantToken2 = new Intl.NumberFormat("de-DE").format(cantToken2);
+                cantToken2 = new Intl.NumberFormat("en").format(cantToken2);
                 break
             }
         }
