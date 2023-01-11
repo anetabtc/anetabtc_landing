@@ -57,7 +57,7 @@ async function countErgo1(){
             let index = tokens[i].name.indexOf(idErgo)
             if(index == 0){
                 token = tokens[i]
-                cant = (tokens[i].amount)/1000000;
+                cant = ((tokens[i].amount)/1000000).toFixed();
                 cant = new Intl.NumberFormat("en").format(cant);
                 break
             }
@@ -79,7 +79,7 @@ async function countErgo2(){
             let index = tokens[i].name.indexOf(idErgo)
             if(index == 0){
                 token = tokens[i]
-                cant2 = (tokens[i].amount)/1000000;
+                cant2 = ((tokens[i].amount)/1000000).toFixed();
                 cant2 = new Intl.NumberFormat("en").format(cant2);
                 break
             }
