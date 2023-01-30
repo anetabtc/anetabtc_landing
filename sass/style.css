@@ -37,6 +37,9 @@
   height: 1.5rem;
   width: 1.5rem;
 }
+.main header nav #menu {
+  z-index: 5;
+}
 .main header nav #menu button {
   display: flex;
   flex-direction: column;
@@ -51,22 +54,25 @@
   height: 4px;
   width: 100%;
   border-radius: 5px;
-  transition: all 0.5s;
+  transition: all 0.75s;
   transform-origin: left;
 }
 .main header nav #menu button:hover {
   cursor: pointer;
 }
+.main header nav #menu button.close div {
+  height: 2px;
+}
 .main header nav #menu button.close div:first-child {
   transform: rotate(45deg);
-  width: 26px;
+  width: 20px;
 }
 .main header nav #menu button.close div:nth-child(2) {
   opacity: 0;
 }
 .main header nav #menu button.close div:last-child {
   transform: rotate(-45deg);
-  width: 26px;
+  width: 20px;
 }
 .main header nav .switch {
   margin-left: 0.75rem;
@@ -94,8 +100,8 @@ body.dark .main #menu button div {
   background: linear-gradient(253.36deg, #BDE6F7 -18.33%, #C8DED4 100.44%, #C2D9C9 100.44%);
   width: 13rem;
   position: absolute;
-  right: 95px;
-  top: 30px;
+  right: 65px;
+  top: 20px;
   border-radius: 0.4rem;
   transform: translateY(0px);
   transition: 0.3s;
@@ -109,13 +115,13 @@ body.dark .main #menu button div {
 }
 @media (min-width: 2000px) and (orientation: landscape) {
   .menu {
-    right: calc((100vw - 2000px) / 2 + 95px);
+    right: calc((100vw - 2000px) / 2 + 65px);
   }
 }
 @media (max-width: 1044px) and (orientation: portrait) {
   .menu {
-    right: 90px;
-    top: 20px;
+    right: 60px;
+    top: 10px;
   }
 }
 .menu ul {

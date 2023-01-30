@@ -17,8 +17,8 @@ $dark-hover: #FFD78A;
     background: linear-gradient(253.36deg, #BDE6F7 -18.33%, #C8DED4 100.44%, #C2D9C9 100.44%);
     width: $font-p-std*13;
     position: absolute;
-    right: 95px;
-    top: 30px;
+    right: 65px;
+    top: 20px;
     border-radius: $font-p-std*.4;
     transform: translateY(0px);
     transition: $transition;
@@ -28,11 +28,11 @@ $dark-hover: #FFD78A;
         border-radius: $font-p-hd*.4;
     }
     @media (min-width: 2000px) and (orientation: landscape){
-        right: calc((100vw - 2000px)/2 + 95px);
+        right: calc((100vw - 2000px)/2 + 65px);
     }
     @media (max-width: 1044px) and (orientation: portrait) {
-        right: 90px;
-        top: 20px;
+        right: 60px;
+        top: 10px;
     }
     ul {
         padding: $font-p-std*.3 0;
