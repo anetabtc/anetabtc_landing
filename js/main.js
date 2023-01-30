@@ -1,3 +1,5 @@
+(()=>{
+
 const buttonSwitch = document.querySelector('#switch');
 
 buttonSwitch.addEventListener('click', ()=>{
@@ -16,21 +18,13 @@ if(localStorage.getItem('dark-mode')=== 'true'){
 
 const menu = document.querySelector('#menu');
 const active = document.querySelector('.menu');
+const close = document.querySelector('.buttonMenu');
 
 
 menu.addEventListener("click", ()=>{
     active.classList.toggle('mActive')
+    close.classList.toggle('close')
     });
 
-menu.addEventListener("mouseout", ()=>{
-    active.classList.add('mActive')
-    });
 
-active.addEventListener("mousemove", ()=>{
-    active.classList.remove('mActive');
-    });
-
-active.addEventListener("mouseout", ()=>{
-    active.classList.add('mActive');
-    });
-
+})();

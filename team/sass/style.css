@@ -37,6 +37,37 @@
   height: 1.5rem;
   width: 1.5rem;
 }
+.main header nav #menu button {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  background: transparent;
+  gap: 5px;
+}
+.main header nav #menu button div {
+  background: black;
+  height: 4px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.5s;
+  transform-origin: left;
+}
+.main header nav #menu button:hover {
+  cursor: pointer;
+}
+.main header nav #menu button.close div:first-child {
+  transform: rotate(45deg);
+  width: 26px;
+}
+.main header nav #menu button.close div:nth-child(2) {
+  opacity: 0;
+}
+.main header nav #menu button.close div:last-child {
+  transform: rotate(-45deg);
+  width: 26px;
+}
 .main header nav .switch {
   margin-left: 0.75rem;
 }
@@ -51,6 +82,10 @@
 }
 .main header nav .switch:hover {
   cursor: pointer;
+}
+
+body.dark .main #menu button div {
+  background: white;
 }
 
 .menu {
