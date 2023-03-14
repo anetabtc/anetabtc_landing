@@ -284,7 +284,6 @@ main .articleLeft h2 {
   -webkit-text-fill-color: transparent;
   background-size: 400% 400%;
   font-weight: 800;
-  -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
   font-size: 3.5rem;
   line-height: 4.2rem;
@@ -492,7 +491,6 @@ body.dark .buttons .button2 {
   background-size: 400% 400%;
   font-size: 1.75rem;
   padding-bottom: 0.875rem;
-  -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
@@ -549,7 +547,6 @@ body.dark .buttons .button2 {
   background-size: 400% 400%;
   font-size: 1.75rem;
   padding-bottom: 0.875rem;
-  -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
@@ -601,7 +598,6 @@ body.dark .buttons .button2 {
   background-size: 400% 400%;
   font-size: 1.75rem;
   padding-bottom: 0.875rem;
-  -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
@@ -1419,18 +1415,6 @@ body.dark .sunMode {
 }
 body.dark .darkMode {
   display: inline;
-}
-
-@-webkit-keyframes change {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 @keyframes change {
   0% {

@@ -325,8 +325,7 @@ section .group__cards .cards #copy {
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  -webkit-animation: loader 2s infinite ease-in-out;
-          animation: loader 2s infinite ease-in-out;
+  animation: loader 2s infinite ease-in-out;
 }
 
 .loader {
@@ -348,15 +347,6 @@ section .group__cards .cards #copy {
 }
 .loader::after {
   left: 20px;
-}
-
-@-webkit-keyframes loader {
-  0%, 80%, 100% {
-    box-shadow: 0 10px 0 -5px;
-  }
-  40% {
-    box-shadow: 0 10px 0 0;
-  }
 }
 
 @keyframes loader {
