@@ -1,3 +1,4 @@
+@use "./fontweight" as fonts;
 
 $icon-std: 2rem;
 $height-std: 88px;
@@ -27,12 +28,52 @@ $padding-min: 16px;
         }
         img{
             height: $icon-std;
+
+            &.large{
+                @media (max-width: 500px) {
+                    display: none;
+                }  
+            }
+            &.mobile{
+                @media (min-width: 500px) {
+                    display: none;
+                }  
+            }
         }
         nav{
             display: flex;
             align-items: center;
             justify-content: flex-end;
             height: 100%;
+            .buttonLaunch{
+                .btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: linear-gradient(94.47deg, #45B4BB -16.48%, #4698C7 106.04%);
+                    font-weight: fonts.$font-weight-semibold;
+                    color: #FFFFFF;
+                    transition: 0.25s;
+                    border: none;
+                    font-size: 18px;
+                    border-radius: 20px;
+                    width: 180px;
+                    height: 40px;
+                    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+                    margin-right: 16px;
+                    &:hover{
+                        cursor: pointer;
+                        scale: 1.1;
+                    }
+                }
+                @media (max-width: 600px) {
+                    .btn{
+                        font-size: 16px;
+                        width: 160px;
+                        height: 35px;
+                    }
+                }
+            }
             i{
                 img{
                     height: $icon-std*.75;
