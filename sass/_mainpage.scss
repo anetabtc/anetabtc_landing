@@ -46,201 +46,243 @@ $secundary-color: #ffffff;
 $dark-color: #141B22;
 
 main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10%;
+  min-height: $height-std;
+
+  @media (min-width: 2000px) and (orientation: landscape) {
+    width: 1600px;
+  }
+
+  .articleLeft {
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 10%;
-    min-height: $height-std;
-    @media (min-width: 2000px) and (orientation: landscape){
-        width: 1600px;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+
+    @media (max-width: 1023px) and (orientation: landscape) {
+      width: 100%;
     }
 
-    .articleLeft {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
+    @media (max-width: 1044px) and (orientation: portrait) {
+      width: 100%;
+    }
+
+    .articleLeft div {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    h2 {
+      background: linear-gradient(91.66deg, #06496E -51.95%, #4D849C 34.89%, #354998 129.28%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      font-weight: fonts.$font-weight-extrabold;
+      -webkit-animation: change 4s ease infinite;
+      animation: change 4s ease infinite;
+      font-size: $font-h2-std;
+      line-height: $font-h2-std*1.2;
+      padding: $font-h2-std*.3 0px;
+
+      @media (min-width: 1640px) and (orientation: landscape) {
+        font-size: $font-h2-hd;
+        line-height: $font-h2-hd*1.2;
+        padding: $font-h2-hd*.3 0px;
+      }
+
+      @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px) {
+        font-size: $font-h2-min;
+        line-height: $font-h2-min*1.2;
+        padding: $font-h2-min*.3 0px;
+      }
+
+      @media (max-width: 1044px) and (orientation: portrait) {
+        text-align: center;
+      }
+
+      @media (max-width: 600px) and (orientation: portrait) {
+        font-size: $font-h2-min;
+        line-height: $font-h2-min*1.2;
+        padding: $font-h2-min*.3 0px;
+      }
+    }
+
+    h1 {
+      background: linear-gradient(180deg, #000000 0%, #014469 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: fonts.$font-weight-bold;
+      font-size: $font-h1-std;
+      margin-bottom: $font-h1-std;
+
+      @media (min-width: 1640px) and (orientation: landscape) {
+        font-size: $font-h1-hd;
+        margin-bottom: $font-h1-hd;
+      }
+
+      @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px) {
+        font-size: $font-h1-min;
+        margin-bottom: $font-h1-min;
+      }
+
+      @media (max-width: 1044px) and (orientation: portrait) {
+        text-align: center;
+      }
+
+      @media (max-width: 600px) and (orientation: portrait) {
+        font-size: $font-h1-min;
+        margin-bottom: $font-h1-min;
+      }
+
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      gap: $font-btn-std;
+
+      @media (min-width: 1640px) and (orientation: landscape) {
+        gap: $font-btn-hd;
+      }
+
+      @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px) {
+        gap: $font-btn-min;
+        margin-bottom: $font-btn-min*2;
+      }
+
+      @media (max-width: 1044px) and (orientation: portrait) {
         justify-content: center;
-        width: 70%;
-        @media (max-width: 1023px) and (orientation: landscape){
-            width: 100%;
-        }
-        @media (max-width: 1044px) and (orientation: portrait) {
-            width: 100%;
-        }
-        
-        .articleLeft div {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
+        align-items: center;
+      }
 
-        h2{
-            background: linear-gradient(91.66deg, #06496E -51.95%, #4D849C 34.89%, #354998 129.28%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size:400% 400%;
-            font-weight: fonts.$font-weight-extrabold;
-            -webkit-animation:change 4s ease infinite;
-            animation:change 4s ease infinite;
-            font-size: $font-h2-std;
-            line-height: $font-h2-std*1.2;
-            padding: $font-h2-std*.3 0px; 
-            @media (min-width: 1640px) and (orientation: landscape){
-                font-size: $font-h2-hd;
-                line-height: $font-h2-hd*1.2;
-                padding: $font-h2-hd*.3 0px; 
-            }
-            @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
-                font-size: $font-h2-min;
-                line-height: $font-h2-min*1.2;
-                padding: $font-h2-min*.3 0px;
-            }
-            @media (max-width: 1044px) and (orientation: portrait){
-                text-align: center;
-            }
-            @media (max-width: 600px) and (orientation: portrait){
-                font-size: $font-h2-min;
-                line-height: $font-h2-min*1.2;
-                padding: $font-h2-min*.3 0px;
-            }
-        }
-        h1{
-            background: linear-gradient(180deg, #000000 0%, #014469 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: fonts.$font-weight-bold;
-            font-size: $font-h1-std;
-            margin-bottom: $font-h1-std;
-            @media (min-width: 1640px) and (orientation: landscape){
-                font-size: $font-h1-hd;
-                margin-bottom: $font-h1-hd;
-            }
-            @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
-                font-size: $font-h1-min;
-                margin-bottom: $font-h1-min;
-            }
-            @media (max-width: 1044px) and (orientation: portrait){
-                text-align: center;
-            }
-            @media (max-width: 600px) and (orientation: portrait){
-                font-size: $font-h1-min;
-                margin-bottom: $font-h1-min;
-            }
-            
-        }
-        .buttons{
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            gap: $font-btn-std;
-            @media (min-width: 1640px) and (orientation: landscape){
-                gap: $font-btn-hd;
-            }
-            @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
-                gap: $font-btn-min;
-                margin-bottom: $font-btn-min*2;
-            }
-            @media (max-width: 1044px) and (orientation: portrait){
-                justify-content: center;
-                align-items: center;
-            }
-            @media (max-width: 600px) and (orientation: portrait){
-                flex-direction: column;
-                gap: $font-btn-min;
-            }
+      @media (max-width: 600px) and (orientation: portrait) {
+        flex-direction: column;
+        gap: $font-btn-min;
+      }
 
-            .button{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: linear-gradient(94.47deg, #45B4BB -16.48%, #4698C7 106.04%);
-                font-weight: fonts.$font-weight-semibold;
-                color: $secundary-color;
-                border: none;
-                transition: $transition;
-                font-size: $font-btn-std;
-                border-radius: $border-btn-std;
-                width: $width-btn-std;
-                height: $height-btn-std;
-                box-shadow: $box-shadow-light-std;
-                &:hover{
-                    cursor: pointer;
-                    scale: 1.1;
-                }
-                @media (min-width: 1640px) and (orientation: landscape){
-                    font-size: $font-btn-hd;
-                    border-radius: $border-btn-hd;
-                    width: $width-btn-hd;
-                    height: $height-btn-hd;
-                    box-shadow: $box-shadow-light-hd;
-                }
-                @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
-                    font-size: $font-btn-min;
-                    border-radius: $border-btn-min;
-                    width: $width-btn-min;
-                    height: $height-btn-min;
-                    box-shadow: $box-shadow-light-min;
-                }
-                @media (max-width: 600px) and (orientation: portrait){
-                    font-size: $font-btn-min;
-                    border-radius: $border-btn-min;
-                    width: $width-btn-min;
-                    height: $height-btn-min;
-                    box-shadow: $box-shadow-light-min;
-                }
-            }
-            .button2{
-                background: linear-gradient(94.47deg, #06496E -16.48%, #4698C7 106.04%);
-            }
-        }
-        
-    }
-    .articleRight {
+      .button {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
-        @media (max-width: 1023px) and (orientation: landscape){
-            display: none; 
-        }
-        @media (max-width: 1044px) and (orientation: portrait){
-            display: none; 
-        }
-        img {
-           width: $width-img-main-std;
-           margin-bottom: $font-h1-std;
-           @media (min-width: 1640px) and (orientation: landscape){
-                width: $width-img-main-hd;
-                margin-bottom: $font-h1-hd;
-                
-            }
+        gap: 3px;
+        background: linear-gradient(92deg, #72C4FF -2.99%, #7CA9FF 112.97%);
+        font-weight: fonts.$font-weight-semibold;
+        color: $secundary-color;
+        border: 2px solid #005FCC;
+        transition: $transition;
+        font-size: $font-btn-std;
+        border-radius: $border-btn-std;
+        width: $width-btn-std;
+        height: $height-btn-std;
+        box-shadow: $box-shadow-light-std;
 
-        }        
+        &:hover {
+          cursor: pointer;
+          scale: 1.1;
+        }
+        .cbtc-logo{
+          margin-left: 5px;
+        }
+
+        @media (min-width: 1640px) and (orientation: landscape) {
+          font-size: $font-btn-hd;
+          border-radius: $border-btn-hd;
+          width: $width-btn-hd;
+          height: $height-btn-hd;
+          box-shadow: $box-shadow-light-hd;
+        }
+
+        @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px) {
+          font-size: $font-btn-min;
+          border-radius: $border-btn-min;
+          width: $width-btn-min;
+          height: $height-btn-min;
+          box-shadow: $box-shadow-light-min;
+        }
+
+        @media (max-width: 600px) and (orientation: portrait) {
+          font-size: $font-btn-min;
+          border-radius: $border-btn-min;
+          width: $width-btn-min;
+          height: $height-btn-min;
+          box-shadow: $box-shadow-light-min;
+          .cbtc-logo{
+            width: 20px;
+            height: 20px;
+          }
+  
+        }
+      }
+
+/*       .button2 {
+        background: linear-gradient(94.47deg, #06496E -16.48%, #4698C7 106.04%);
+      } */
     }
+
+  }
+
+  .articleRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    @media (max-width: 1023px) and (orientation: landscape) {
+      display: none;
+    }
+
+    @media (max-width: 1044px) and (orientation: portrait) {
+      display: none;
+    }
+
+    img {
+      width: $width-img-main-std;
+      margin-bottom: $font-h1-std;
+
+      @media (min-width: 1640px) and (orientation: landscape) {
+        width: $width-img-main-hd;
+        margin-bottom: $font-h1-hd;
+
+      }
+
+    }
+  }
 }
 
-body.dark{
-    .articleLeft h2 {
-        background: linear-gradient(270deg, #9BB3F2 15.33%, #F0A5A4 101.88%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size:400% 400%;
+body.dark {
+  .articleLeft h2 {
+    background: linear-gradient(270deg, #9BB3F2 15.33%, #F0A5A4 101.88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+  }
+
+  .articleLeft h1 {
+    background: linear-gradient(180deg, #FFFFFF 0%, #C2CAD1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .buttons {
+    .button {
+      background: linear-gradient(94.47deg, #45B4BB -16.48%, #4698C7 49.36%);
+      box-shadow: $box-shadow-dark-std;
+
+      @media (min-width: 1640px) and (orientation: landscape) {
+        box-shadow: $box-shadow-dark-hd;
+      }
     }
-    .articleLeft h1{
-        background: linear-gradient(180deg, #FFFFFF 0%, #C2CAD1 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+
+    .button2 {
+      background: linear-gradient(94.47deg, #EDA6A7 -16.48%, #AAB1E5 49.36%);
     }
-    .buttons{
-        .button{
-            background: linear-gradient(94.47deg, #45B4BB -16.48%, #4698C7 49.36%);
-            box-shadow: $box-shadow-dark-std;
-            @media (min-width: 1640px) and (orientation: landscape){
-                box-shadow: $box-shadow-dark-hd;
-            }
-        }
-        .button2{
-         background: linear-gradient(94.47deg, #EDA6A7 -16.48%, #AAB1E5 49.36%);
-        }
-    }
+  }
 }

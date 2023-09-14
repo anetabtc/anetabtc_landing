@@ -47,13 +47,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(94.47deg, #45B4BB -16.48%, #4698C7 106.04%);
+  background: linear-gradient(92deg, #72C4FF -2.99%, #7CA9FF 112.97%);
+  border: 2px solid #005FCC;
   font-weight: 600;
   color: #FFFFFF;
   transition: 0.25s;
-  border: none;
   font-size: 18px;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 180px;
   height: 40px;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
@@ -317,6 +317,7 @@ main .articleLeft .articleLeft div {
 }
 main .articleLeft h2 {
   background: linear-gradient(91.66deg, #06496E -51.95%, #4D849C 34.89%, #354998 129.28%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400% 400%;
@@ -354,6 +355,7 @@ main .articleLeft h2 {
 }
 main .articleLeft h1 {
   background: linear-gradient(180deg, #000000 0%, #014469 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -388,6 +390,9 @@ main .articleLeft .buttons {
   flex-wrap: nowrap;
   flex-direction: row;
   gap: 1.125rem;
+  /*       .button2 {
+          background: linear-gradient(94.47deg, #06496E -16.48%, #4698C7 106.04%);
+        } */
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   main .articleLeft .buttons {
@@ -416,10 +421,11 @@ main .articleLeft .buttons .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(94.47deg, #45B4BB -16.48%, #4698C7 106.04%);
+  gap: 3px;
+  background: linear-gradient(92deg, #72C4FF -2.99%, #7CA9FF 112.97%);
   font-weight: 600;
   color: #ffffff;
-  border: none;
+  border: 2px solid #005FCC;
   transition: 0.25s;
   font-size: 1.125rem;
   border-radius: 0.675rem;
@@ -430,6 +436,9 @@ main .articleLeft .buttons .button {
 main .articleLeft .buttons .button:hover {
   cursor: pointer;
   scale: 1.1;
+}
+main .articleLeft .buttons .button .cbtc-logo {
+  margin-left: 5px;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   main .articleLeft .buttons .button {
@@ -457,9 +466,10 @@ main .articleLeft .buttons .button:hover {
     height: 2.2rem;
     box-shadow: 0px 0px 0.25rem 0px rgba(0, 0, 0, 0.25);
   }
-}
-main .articleLeft .buttons .button2 {
-  background: linear-gradient(94.47deg, #06496E -16.48%, #4698C7 106.04%);
+  main .articleLeft .buttons .button .cbtc-logo {
+    width: 20px;
+    height: 20px;
+  }
 }
 main .articleRight {
   display: flex;
