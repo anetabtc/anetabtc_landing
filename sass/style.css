@@ -63,10 +63,15 @@
   cursor: pointer;
   scale: 1.1;
 }
+@media (max-width: 768px) {
+  .main header nav .buttonLaunch .claim {
+    display: none;
+  }
+}
 @media (max-width: 600px) {
   .main header nav .buttonLaunch .btn {
     font-size: 16px;
-    width: 160px;
+    width: 130px;
     height: 35px;
   }
 }
@@ -411,6 +416,13 @@ main .articleLeft .buttons {
     align-items: center;
   }
 }
+@media (max-width: 768px) {
+  main .articleLeft .buttons {
+    max-width: 400px;
+    margin-inline: auto;
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 600px) and (orientation: portrait) {
   main .articleLeft .buttons {
     flex-direction: column;
@@ -469,6 +481,14 @@ main .articleLeft .buttons .button .cbtc-logo {
   main .articleLeft .buttons .button .cbtc-logo {
     width: 20px;
     height: 20px;
+  }
+}
+main .articleLeft .buttons .claim {
+  display: none;
+}
+@media (max-width: 768px) {
+  main .articleLeft .buttons .claim {
+    display: flex;
   }
 }
 main .articleRight {

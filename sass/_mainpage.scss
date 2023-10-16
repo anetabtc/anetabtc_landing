@@ -162,6 +162,11 @@ main {
         justify-content: center;
         align-items: center;
       }
+      @media (max-width: 768px) {
+        max-width: 400px;
+        margin-inline: auto;
+        flex-wrap: wrap;
+      }
 
       @media (max-width: 600px) and (orientation: portrait) {
         flex-direction: column;
@@ -219,6 +224,12 @@ main {
             height: 20px;
           }
   
+        }
+      }
+      .claim{
+        display: none;
+        @media (max-width: 768px){
+          display: flex;
         }
       }
 

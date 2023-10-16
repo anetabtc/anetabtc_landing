@@ -74,11 +74,17 @@ $padding-min: 16px;
 						scale: 1.1;
 					}
 				}
+				@media (max-width: 768px) {
+					.claim{
+						display: none;
+					}
+					
+				}
 
 				@media (max-width: 600px) {
 					.btn {
 						font-size: 16px;
-						width: 160px;
+						width: 130px;
 						height: 35px;
 					}
 				}
