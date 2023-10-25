@@ -1,0 +1,39 @@
+
+.loader, .loader::before, .loader::after{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation:loader 2s infinite ease-in-out;
+}
+
+.loader{
+    margin-left: 60px;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: -7px;
+    right: 20px;
+    display: none;
+    &::before, &::after{
+        content: "";
+        position: absolute;
+    }
+    &::before{
+        left: -20px;
+    }
+    &::after{
+        left: 20px;
+    }
+}
+
+@keyframes loader{
+    0%,
+    80%,
+    100%{
+        box-shadow: 0 10px 0 -5px;
+    }
+    40% {
+        box-shadow: 0 10px 0 0;
+    }
+}

@@ -1,0 +1,39 @@
+
+$height-std: 37px;
+$height-min: 25px;
+
+header{
+    @media (max-width: 1250px) {
+        display: flex;
+        justify-content: center;
+    }
+    @media (orientation: portrait) {
+        display: flex;
+        justify-content: center;
+    }
+    nav{
+        img{
+            height: $height-std;
+            margin-top: $height-std;
+            margin-left: $height-std;
+            @media (min-width: 2000px) and (orientation: landscape){
+                margin-left: calc((100vw - 2000px)/2 + $height-std*.5);
+            }
+            @media (max-width: 1250px) {
+                margin-top: $height-std*.5;
+                margin-left: 0;
+                margin-bottom: $height-std*2;
+            }
+            @media (orientation: portrait) {
+                margin-top: $height-std*.5;
+                margin-left: 0;
+                margin-bottom: $height-std*2;
+            }
+            @media (max-width: 660px) {
+                height: $height-min;
+                margin-top: $height-min*.5;
+                margin-bottom: $height-min*2;
+            }
+        }
+    }
+}

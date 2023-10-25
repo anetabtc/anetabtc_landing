@@ -1,0 +1,28 @@
+@use "./fontweight" as fonts;
+@use "./header" as header;
+@use "./titles" as titles;
+@use "./card" as card;
+@use "./loader" as loader;
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), radial-gradient(53.33% 93.59% at 67.93% 40.35%, rgba(0, 79, 197, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(46.89% 53.99% at 9.65% 14.72%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(294.35deg, rgba(1, 0, 38, 0.9) -4.67%, rgba(9, 21, 90, 0) 30.64%), linear-gradient(48.2deg, rgba(0, 0, 0, 0.9) -30.13%, rgba(10, 25, 60, 0) 27.55%), linear-gradient(0deg, rgba(4, 0, 30, 0.49), rgba(4, 0, 30, 0.49)), linear-gradient(0deg, rgba(0, 25, 115, 0.64), rgba(0, 25, 115, 0.64)), linear-gradient(116.93deg, rgba(227, 205, 0, 0.2) -7.29%, rgba(64, 114, 209, 0) 22.16%), linear-gradient(250.71deg, rgba(255, 230, 0, 0.2) -2.41%, rgba(48, 78, 203, 0) 33.74%), radial-gradient(34.99% 60.49% at 30.86% 65.01%, rgba(0, 209, 255, 0.4) 0%, rgba(0, 102, 255, 0.4) 100%), linear-gradient(234.34deg, rgba(0, 48, 171, 0.2) 44.96%, rgba(19, 72, 209, 0) 52.59%), linear-gradient(235.96deg, rgba(30, 67, 199, 0.3) 36.71%, rgba(107, 85, 172, 0) 45.68%), linear-gradient(235.66deg, rgba(0, 31, 140, 0.3) 53.56%, rgba(115, 134, 201, 0) 76.68%), linear-gradient(109.9deg, #ADCAF6 -14.88%, #72B5DF -14.87%);
+    background-size: 100% 400vh;
+    background-repeat: no-repeat;
+    @media (max-height: 500px) and (orientation: landscape){
+        background-size: 100% 600vh;
+    }
+}

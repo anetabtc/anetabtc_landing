@@ -1,0 +1,72 @@
+@use "./fontweight" as fonts;
+
+
+$primary-color: #FFFFFF;
+$font-h1-std: 2.25rem;
+$font-h2-std: 1.5rem;
+$font-p-std: 1.125rem;
+
+$font-h1-min: 1.25rem;
+$font-h2-min: 1.2rem;
+$font-p-min: 1rem;
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $primary-color;
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: $font-h1-std*1.6;
+        max-width: 1000px;
+        height: $font-h1-std*2;
+        width: 90%;
+        h1 {
+            font-size: $font-h1-std;
+            font-weight: fonts.$font-weight-regular;
+        }
+        @media (max-width: 900px) {
+            max-width: 600px;
+        }
+        @media (max-width: 660px) {
+            h1 {
+                font-size: $font-h1-min;
+            }
+        }
+    }
+    div:last-child{
+        max-width: 1000px;
+        width: 90%;
+        margin-bottom: $font-h1-std*1.28;
+        h2{
+            font-size: $font-h2-std;
+            font-weight: fonts.$font-weight-semibold;
+            margin-top: $font-h1-std*1.28;
+            margin-bottom: $font-h2-std;
+        }
+        p{
+            font-weight: fonts.$font-weight-regular;
+            font-size: $font-p-std;
+            text-align: center;
+        }
+        @media (max-width: 900px) {
+            max-width: 600px;
+        }
+        @media (max-width: 660px) {
+            width: 85%;
+            h2 {
+                font-size: $font-h2-min;
+            }
+            p{
+                font-size: $font-p-min;
+            }
+        }
+    }
+
+}
