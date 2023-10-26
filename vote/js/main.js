@@ -32,10 +32,10 @@
 	let middle = "sqtjWK4C4HRh05xQNt"
 
 
-	const idErgo = "eVOTE3";
+	const idErgo = "eVOTE3_1";
 
 	const policyIdAssetCVote =
-		"b5428f01743ac95f122b60730cf50f73d4598a02f08540b63d7015ca";
+		"b5428f01743ac95f122b60730cf50f73d4598a02f08540b63d7015ca63564f544533";
 
 
 	const addressCardano1 =
@@ -58,6 +58,7 @@
 		"https://api.ergoplatform.com/api/v1/addresses/9hrQ9WberwG9SSbXyUhHcDbfbfwK7vVfhGjnCcze1f9fDH4BiyK/balance/confirmed";
 
 		let end = "etvLnTPxnvRm5rY5"
+
 
 	async function countErgo1() {
 		let vote = document.getElementById("ergo1");
