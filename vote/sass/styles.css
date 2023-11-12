@@ -114,23 +114,27 @@ section .group__cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 60px;
+  gap: 100px;
   margin: 0 60px;
 }
-@media (max-width: 660px) {
+@media (max-width: 1440px) {
   section .group__cards {
-    margin: 0 0;
-    gap: 30px;
+    gap: 50px;
+  }
+}
+@media (max-width: 780px) {
+  section .group__cards {
+    margin: 0;
   }
 }
 section .group__cards .cards {
-  width: 500px;
+  width: 600px;
   color: #FFFFFF;
   background: rgba(0, 0, 0, 0.46);
   border-radius: 20px;
   padding: 1.25rem;
 }
-@media (max-width: 560px) {
+@media (max-width: 666px) {
   section .group__cards .cards {
     width: 90%;
     padding: 1.1rem;
@@ -151,7 +155,7 @@ section .group__cards .cards header h2 {
 section .group__cards .cards header p {
   font-size: 1rem;
   font-weight: 600;
-  width: 85%;
+  width: 90%;
   text-align: center;
   color: #FFFFFF;
   line-height: 1.5rem;
