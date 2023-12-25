@@ -17,21 +17,19 @@ section {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 100px;
+        gap: 60px;
         margin: 0 60px;
-        @media (max-width: 1440px) {
-            gap: 50px;
-        }
-        @media (max-width: 780px) {
-            margin: 0;
+        @media (max-width: 660px) {
+            margin: 0 0;
+            gap: 30px;
         }
         .cards{
-            width: 600px;
+            width: 500px;
             color: $primary-color;
             background: rgba(0, 0, 0, 0.46);
             border-radius: 20px;
             padding: $font-h2-std;
-            @media (max-width: 666px) {
+            @media (max-width: 560px) {
                 width: 90%;
                 padding: $font-h2-min;
             }
@@ -49,10 +47,14 @@ section {
                 p{
                     font-size: $font-p-std;
                     font-weight: fonts.$font-weight-semibold;
-                    width: 90%;
+                    width: 85%;
                     text-align: center;
                     color: #FFFFFF;
                     line-height: $font-p-std*1.5;
+                    min-height: 72px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
                 @media (max-width: 660px) {
                     h2{
