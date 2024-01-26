@@ -1,0 +1,82 @@
+/*--------------------------------------------------------------
+  ## hero-area
+--------------------------------------------------------------*/
+
+.hero-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -75%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1500px;
+    height: 1500px;
+    border-radius: 750px;
+    background: radial-gradient(
+      70.71% 70.71% at 50% 50%,
+      rgba(144, 172, 255, 0.2) 0%,
+      rgba(144, 172, 255, 0) 70%,
+      rgba(144, 172, 255, 0) 100%
+    );
+    @media only screen and (max-width: 767px) {
+      width: 1000px;
+      height: 1000px;
+      top: -60%;
+    }
+  }
+  .hero-text {
+    position: relative;
+    h1 {
+     
+      color: #e8eaed;
+      font-family: $font-family-outfit;
+      font-size: 140px;
+      line-height: 1.1;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 3px;
+      @media only screen and (max-width: 1399px) {
+        font-size: 105px;
+      }
+      @media only screen and (max-width: 1199px) {
+        font-size: 90px;
+      }
+      @media only screen and (max-width: 991px) {
+        font-size: 75px;
+      }
+      @media only screen and (max-width: 767px) {
+        font-size: 60px;
+      }
+      @media only screen and (max-width: 482px) {
+        font-size: 42px;
+      }
+      span {
+        background: linear-gradient(87.65deg, #4299ff -8.44%, #badaf7 97.32%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        width: 480px; /* Set a fixed width for the span */
+        text-align: center; 
+        @media only screen and (max-width: 1399px) {
+          width: auto;
+        }
+        @media only screen and (max-width: 482px) {
+          width: 145px; /* Set a fixed width for the span */
+        }
+     
+
+      }
+    }
+  }
+}

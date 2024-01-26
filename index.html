@@ -1,451 +1,868 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./sass/style.css" />
-    <title>Home | anetaBTC</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon-16x16.png"
-    />
-    <link rel="shortcut icon" href="./favicon.ico" />
-    <link rel="manifest" href="./site.webmanifest" />
-    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#9BD9F2" />
-    <meta name="msapplication-TileColor" content="#9bd9f2" />
-    <meta name="theme-color" content="#ffffff" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "url": "https://anetabtc.io",
-        "logo": "https://anetabtc.io/img/icon_aneta.png"
-      }
-    </script>
-  </head>
+<html class="no-js" lang="">
 
-  <body>
-    <div class="main">
-      <header>
-        <a href="/">
-          <img
-            src="./img/aneta_logo_light.png"
-            alt="logo"
-            class="sunMode large"
-          />
-          <img
-            src="./img/aneta_logo_dark.png"
-            alt="logo"
-            class="darkMode large"
-          />
-          <img src="./img/minswap_light.png" alt="logo" class="mobile" />
-        </a>
-        <nav>
-          <a href="https://app.tosidrop.io" target="_blank" class="buttonLaunch"
-            ><div class="btn claim">Claim Rewards</div></a
-          >
-          <a href="https://app.anetabtc.io" target="_blank" class="buttonLaunch"
-            ><div class="btn">Launch App</div></a
-          >
-          <div class="menu mActive">
-            <ul>
-              <li>
-                <a href="https://stake.anetabtc.io/" target="_blank"
-                  >Staking Portal</a
-                >
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title> AnetaBTC </title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#050508">
+  <meta name="theme-color" content="#050508">
+
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Magnific Popup CSS -->
+  <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css">
+  <!--aos-->
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/main.css?v=55" />
+
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+  <!-- ======= herder start ======= -->
+  <header class="header">
+    <div class="navbar-area">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg ">
+
+          <a class="navbar-brand" href="/">
+            <img src="assets/img/logo/logo.png" alt="logo">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+            <ul id="nav" class="navbar-nav nav-center">
+
+              <li class="nav-item">
+                <a class="page-scroll" href="#about"> About </a>
               </li>
-              <hr />
-              <li>
-                <a href="https://docs.anetabtc.io/" target="_blank">Docs</a>
+
+              <li class="nav-item">
+                <a class="page-scroll" href="#features"> Features </a>
               </li>
-              <hr />
-              <li>
-                <a
-                  href="https://medium.com/@anetaBTC/roadmap-3-0-the-path-to-btc-on-cardano-and-ergo-9fc3bed3e0c2"
-                  target="_blank"
-                  >Roadmap</a
-                >
+
+              <li class="nav-item">
+                <a class="page-scroll" href="#token"> Tokenomics </a>
               </li>
-              <hr />
-              <li>
-                <a href="https://medium.com/@anetaBTC" target="_blank"
-                  >News and Updates</a
-                >
+
+              <li class="nav-item">
+                <a class="page-scroll" href="#video"> Videos </a>
               </li>
-              <hr />
-              <li>
-                <a
-                  href="https://medium.com/@anetaBTC/anetabtc-litepaper-v1-0-171f29b3276a"
-                  target="_blank"
-                  >Litepaper</a
-                >
+
+
+              <li class="nav-item">
+                <a class="page-scroll" href="#int"> Integrations </a>
               </li>
-              <hr />
-              <li>
-                <a
-                  href="https://medium.com/@anetaBTC/neta-tokenomics-55629989de2b"
-                  target="_blank"
-                  >Tokenomics</a
-                >
-              </li>
+
             </ul>
+
+            <ul id="nav" class="navbar-nav nav-social ms-auto">
+
+              <li class="nav-item">
+                <a href="https://app.anetabtc.io/" target="_blank" class="apply-btn">
+                  LAUNCH APP
+                </a>
+              </li>
+
+            </ul>
+
           </div>
-          <div id="menu">
-            <button class="buttonMenu">
-              <div></div>
-              <div></div>
-              <div></div>
-            </button>
-          </div>
-          <div id="switch" class="switch">
-            <i><img src="./img/moon_theme.png" alt="sun" class="sunMode" /></i>
-            <i><img src="./img/sun_theme.png" alt="moon" class="darkMode" /></i>
-          </div>
+          <!--.collapse-->
+
         </nav>
-      </header>
 
-      <main>
-        <article class="articleLeft">
-          <div>
-            <h2>Decentralized,<br />On Chain Wrapped Bitcoin</h2>
-            <h1>Fully On-chain Bitcoin on Ergo and Cardano.</h1>
-            <div class="buttons">
-              <a href="https://app.anetabtc.io" target="_blank"
-                ><button class="button">
-                  Mint
-                  <img
-                    src="./img/cbtc-logo.svg"
-                    alt="logo-cbtc"
-                    class="cbtc-logo"
-                    width="24px"
-                    height="24px"
-                  />
-                  cBTC
-                </button></a
-              >
-              <a href="https://medium.com/@anetaBTC" target="_blank"
-                ><button class="button button2">Recent News</button></a
-              >
-              <a href="https://app.tosidrop.io" target="_blank"
-                ><button class="button claim">Claim Rewards</button></a
-              >
-            </div>
-          </div>
-        </article>
-        <article class="articleRight">
-          <img src="./img/angel.png" alt="blue_umbrella" />
-        </article>
-      </main>
-    </div>
-
-    <div class="groupCards">
-      <section class="title">
-        <h2>Decentralized, On Chain BTC</h2>
-        <p>A protocol to unlock the value of Bitcoin on Ergo and Cardano.</p>
-      </section>
-
-      <article class="gcards">
-        <div class="card">
-          <img src="./img/wrap_logo.png" alt="wrap_logo" />
-          <h3>Wrap Bitcoin on Ergo and Cardano</h3>
-          <p>
-            Guaranteed and verifiable through transparent and accessible smart
-            contracts.
-          </p>
-        </div>
-
-        <div class="card">
-          <img src="./img/security_logo.png" alt="security_logo" />
-          <h3>Security and Privacy</h3>
-          <p>
-            Leverage built-in privacy and security tools of the most
-            decentralized blockchains.
-          </p>
-        </div>
-
-        <div class="card">
-          <img src="./img/research_logo.png" alt="research_logo" />
-          <h3>Research-driven</h3>
-          <p>
-            A meticulous approach, ensuring correctness with constant oversight
-            and testing.
-          </p>
-        </div>
-      </article>
-    </div>
-
-    <div class="background">
-      <div>
-        <img src="./img/cardano_light.png" alt="background" class="sunMode" />
-        <img src="./img/cardano_dark.png" alt="background" class="darkMode" />
       </div>
-    </div>
+      <!--.container-->
 
-    <section class="clients">
-      <div class="title">
-        <h2>Our Partners</h2>
+
+    </div>
+    <!--.navbar-area-->
+
+  </header>
+  <!-- ======= herder end ======= -->
+
+
+  <section class="hero-area">
+    <div class="container">
+      <div class="hero-text">
+        <h1>
+          Welcome to <br>
+          the <span id="word"></span> Era
+        </h1>
+      </div><!-- /.hero-text -->
+    </div><!-- /.container -->
+  </section><!-- /.hero-area -->
+
+
+  <section class="stand">
+    <div class="container">
+      <div class="stand-txt">
+        <h2 data-aos="fade-up" data-aos-duration="3000">
+          Aneta is built from the ground up for
+          <span>Bitcoin Usability</span> — offering seamless
+          and convenient Bitcoin use for all.
+        </h2>
+      </div><!-- /.stand-txt -->
+    </div><!-- /.container -->
+  </section><!-- /.stand -->
+
+  <section class="meet" id="about">
+    <div class="container">
+      <div class="sec-t">
+        <h2 data-aos="fade-down" data-aos-duration="3000">
+          Meet <span>Aneta V2</span> — <br>
+          Our most advanced Wrapping Protocol.
+        </h2>
+      </div><!-- /.sec-t -->
+
+      <div class="row-wrapper svg-section">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="graph-line" viewBox="0 0 802 372" fill="none">
+          <path
+            d="M0.499282 369.902L49.9926 351.303L73.5064 333.455L91.0326 329.567L114.093 324.451L150.105 289.713L167.631 285.825L189.583 286.156L213.389 260.07L242.535 264.006L265.045 248.61L282.076 232.943L308.25 217.478L324.304 203.514L348.074 204.185L369.983 180.006L396.132 165.288L437.934 147.841L452.825 140.823L473.119 136.321L484.508 124.878L526.939 115.464C537.238 108.969 558.956 95.2841 563.448 92.5042C567.938 89.7252 595.895 72.1798 609.312 63.7544L640.676 56.7958L727.942 21.8327L776.964 7.24155L800.947 1.92091"
+            stroke="url(#paint0_linear_1355_48)" stroke-width="3" />
+          <defs>
+            <linearGradient id="paint0_linear_1355_48" x1="90.2433" y1="-339.819" x2="725.547" y2="-317.207"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FFD464" />
+              <stop offset="1" stop-color="#56C2FF" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <div class="row justify-content-end">
+          <div class="col-lg-3">
+            <div class="bt">
+              <div class="bt-f">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" fill="none">
+                  <path
+                    d="M1.15502 16.3097L1.15505 16.3095C3.83102 5.57118 14.7072 -0.963904 25.4436 1.713L25.4436 1.71301C36.1825 4.38992 42.7171 15.2667 40.0399 26.0045C37.3627 36.7415 26.4866 43.2761 15.7469 40.5985C5.01174 37.9216 -1.52344 27.0461 1.15502 16.3097ZM0.616992 16.1754L0.617026 16.1754L0.616992 16.1754Z"
+                    fill="#0033AD" stroke="#FFFDF5" stroke-width="1.10903" />
+                  <path
+                    d="M29.6713 18.2202C30.0814 15.4795 27.9944 14.0062 25.1408 13.0233L26.0664 9.3107L23.8063 8.7475L22.9051 12.3623C22.3109 12.2142 21.7006 12.0746 21.0943 11.9362L22.0019 8.29758L19.7431 7.73438L18.8167 11.4457C18.3249 11.3337 17.8421 11.223 17.3735 11.1065L17.3761 11.0949L14.2591 10.3167L13.6579 12.7305C13.6579 12.7305 15.3348 13.1147 15.2994 13.1385C16.2148 13.367 16.3802 13.9727 16.3525 14.4529L15.2981 18.6824C15.3612 18.6985 15.4429 18.7216 15.5331 18.7577C15.4577 18.739 15.3773 18.7184 15.2942 18.6985L13.8162 24.6233C13.7042 24.9014 13.4203 25.3185 12.7805 25.1602C12.803 25.193 11.1376 24.7501 11.1376 24.7501L10.0156 27.337L12.9568 28.0701C13.504 28.2072 14.0402 28.3508 14.5681 28.4859L13.6327 32.2411L15.8903 32.8043L16.8166 29.0891C17.4333 29.2564 18.032 29.4109 18.6178 29.5564L17.6947 33.2542L19.9548 33.8174L20.8902 30.0693C24.7442 30.7986 27.6423 30.5045 28.8622 27.019C29.8452 24.2127 28.8133 22.5939 26.7855 21.5383C28.2622 21.1978 29.3746 20.2265 29.6713 18.2202ZM24.5073 25.4608C23.8089 28.2671 19.0832 26.75 17.5512 26.3696L18.7923 21.3948C20.3243 21.7771 25.2373 22.534 24.5073 25.4608ZM25.2064 18.1797C24.5691 20.7324 20.6359 19.4355 19.36 19.1175L20.4853 14.6054C21.7612 14.9234 25.8701 15.5169 25.2064 18.1797Z"
+                    fill="#FFFDF5" />
+                </svg>
+                <span>cBTC</span>
+              </div><!-- /.bt-f -->
+              <h5>11s</h5>
+            </div><!-- /.bt -->
+          </div><!-- /.col-lg-3 -->
+        </div><!-- /.row -->
+
+        <div class="mid-row">
+          <div class="row gy-2 justify-content-between align-items-center">
+            <div class="col-lg-4">
+              <div class="bt-d">
+                <h5>3m</h5>
+                <div class="btd-f">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="117" height="25" viewBox="0 0 117 25" fill="none">
+                    <path
+                      d="M24.0713 15.0894C22.4478 21.6023 15.824 25.5725 9.27657 23.9574C2.72946 22.3426 -1.26163 15.7532 0.361956 9.24031C1.98554 2.72716 8.60933 -1.24333 15.1564 0.371764C15.1674 0.374498 15.1787 0.377232 15.1897 0.380239C21.7195 2.01037 25.6922 8.58913 24.0713 15.0894Z"
+                      fill="#F7931A" />
+                    <path
+                      d="M14.9919 10.396C14.6102 11.9149 12.282 11.1363 11.5263 10.9504L12.1941 8.29266C12.9383 8.475 15.3736 8.8241 14.9804 10.396H14.9919ZM14.5759 14.6907C14.1636 16.3457 11.3622 15.4501 10.4537 15.2257L11.1902 12.2908C12.0987 12.5185 15.007 12.9627 14.5759 14.6907ZM17.6293 10.419C17.8697 8.80141 16.6331 7.93208 14.9576 7.35498L15.5072 5.16416L14.1524 4.83009L13.6181 6.96406C13.2669 6.87685 12.9044 6.7932 12.5455 6.71337L13.0798 4.55672L11.7401 4.22266L11.1904 6.41348L10.3355 6.22376L8.48438 5.76422L8.12932 7.18822C8.12932 7.18822 9.12167 7.41594 9.1027 7.43125C9.48167 7.47691 9.75813 7.81179 9.72872 8.19069L9.1027 10.6852C9.1497 10.6959 9.19586 10.7109 9.24011 10.7309L9.09886 10.6929L8.22468 14.1899C8.14279 14.4458 7.86797 14.5866 7.61047 14.5051H7.6102C7.6102 14.524 6.63297 14.2659 6.63297 14.2659L5.96875 15.7848L7.71298 16.214L8.66713 16.4608L8.11366 18.6743L9.45336 19.0084L10.003 16.8176C10.3641 16.9163 10.7194 17.0073 11.0679 17.0909L10.526 19.2894L11.8657 19.6197L12.4191 17.41C14.7091 17.8394 16.4229 17.668 17.1481 15.6103C17.7321 13.9548 17.1176 13.0018 15.9153 12.3791C16.793 12.1779 17.4421 11.6196 17.629 10.4198L17.6293 10.419Z"
+                      fill="white" />
+                    <path
+                      d="M31.798 20.5028C32.5114 20.505 33.2133 20.3243 33.8363 19.9788C34.4774 19.6387 35.0413 19.1704 35.4928 18.6042C35.9633 18.0055 36.3332 17.335 36.5882 16.6184C36.8573 15.8781 36.9938 15.0971 36.9927 14.3101C37.0356 13.5115 36.8641 12.716 36.4964 12.0052C36.1683 11.4547 35.5574 11.1739 34.672 11.1739C34.2861 11.187 33.9025 11.2392 33.5268 11.3295C33.0605 11.4331 32.629 11.6556 32.2748 11.9749L30.2519 20.3888L30.5764 20.4495C30.6729 20.473 30.7716 20.4883 30.8702 20.4952C30.9969 20.5107 31.1244 20.517 31.2519 20.514L31.7977 20.5025L31.798 20.5028ZM35.8171 7.3505C36.7006 7.33027 37.5778 7.5096 38.3819 7.87455C39.0799 8.20561 39.6933 8.68976 40.1759 9.29091C40.67 9.91256 41.0333 10.6263 41.2446 11.3904C41.476 12.233 41.5901 13.1028 41.5843 13.9763C41.5832 16.6936 40.5244 19.3046 38.6301 21.2625C37.7117 22.1997 36.619 22.9498 35.4126 23.4722C34.1476 24.0261 32.7793 24.3085 31.3973 24.3H30.4201C29.8889 24.2828 29.3585 24.2374 28.8322 24.1633C28.1894 24.0706 27.5524 23.9441 26.9239 23.7836C26.2649 23.628 25.6252 23.4014 25.0156 23.1078L30.3783 0.759435L35.1685 0L33.2603 7.93169C33.6576 7.7529 34.0701 7.60938 34.4931 7.50276C34.9289 7.39724 35.3766 7.34475 35.8251 7.34721L35.8174 7.35104L35.8171 7.3505Z"
+                      fill="white" />
+                    <path
+                      d="M48.7586 5.71925C48.1342 5.72527 47.5255 5.52625 47.0256 5.15364C46.4958 4.73675 46.2094 4.08475 46.2622 3.41471C46.26 2.99672 46.3496 2.5831 46.5254 2.20338C46.6939 1.83351 46.9305 1.49863 47.224 1.21623C47.5172 0.939027 47.8569 0.715407 48.2279 0.555483C48.6137 0.390638 49.0295 0.306712 49.4492 0.308626C50.0691 0.306712 50.6721 0.506822 51.1667 0.878065C51.6955 1.29578 51.9816 1.94723 51.9302 2.617C51.9335 3.03608 51.845 3.45079 51.6707 3.83188C51.5023 4.19984 51.2668 4.53308 50.976 4.81521C50.6836 5.0935 50.344 5.31712 49.9721 5.47595C49.5863 5.6408 49.1705 5.72363 48.7509 5.71898H48.7586V5.71925ZM46.5334 23.8648H41.9531L45.8233 7.68974H50.4302L46.5331 23.8648H46.5334Z"
+                      fill="white" />
+                    <path
+                      d="M54.4461 3.66225L59.236 2.92578L58.0453 7.69097H63.1755L62.2513 11.4422H57.1634L55.8047 17.0844C55.6871 17.5163 55.6143 17.9592 55.5871 18.4062C55.5591 18.7676 55.6129 19.1306 55.7435 19.4688C55.8712 19.7722 56.1079 20.0174 56.4077 20.156C56.8391 20.3458 57.3102 20.4321 57.7817 20.4067C58.2649 20.4084 58.7469 20.3611 59.2207 20.2662C59.6975 20.1735 60.1671 20.0467 60.6252 19.8865L60.9687 23.3947C60.3111 23.6298 59.6392 23.8242 58.9571 23.9756C58.1143 24.1536 57.2538 24.2364 56.3923 24.2225C54.9685 24.2225 53.8692 24.0098 53.083 23.5921C52.3476 23.22 51.7584 22.6131 51.4113 21.8682C51.0725 21.0779 50.9246 20.2195 50.9801 19.3622C51.0315 18.3564 51.1758 17.3575 51.4113 16.3777L54.4458 3.64694V3.66225H54.4461Z"
+                      fill="white" />
+                    <path
+                      d="M63.0039 17.4075C62.9943 16.0658 63.2241 14.7323 63.6833 13.4704C64.1139 12.2771 64.7754 11.1795 65.6298 10.2394C66.4913 9.30688 67.5389 8.56466 68.706 8.05947C69.9789 7.51272 71.3538 7.23962 72.7402 7.25875C73.5773 7.24891 74.4127 7.33666 75.2289 7.52037C75.9151 7.68221 76.5827 7.91376 77.2213 8.21146L75.6299 11.7692C75.2177 11.6021 74.7901 11.4583 74.3473 11.3249C73.8194 11.1787 73.2728 11.1109 72.7251 11.1237C71.3412 11.074 70.01 11.656 69.1105 12.7033C68.2174 13.7484 67.7692 15.1533 67.767 16.9179C67.7249 17.8129 67.9624 18.6987 68.4463 19.4545C68.8989 20.1 69.7341 20.4223 70.9501 20.4223C71.533 20.4228 72.1139 20.3605 72.6831 20.2364C73.1907 20.1287 73.6881 19.975 74.1679 19.7768L74.5076 23.4373C73.8832 23.6724 73.2462 23.8728 72.5993 24.0368C71.7779 24.2211 70.9375 24.308 70.0954 24.2955C68.9778 24.3277 67.8654 24.1405 66.8205 23.7446C65.99 23.4116 65.2423 22.9026 64.6297 22.2528C64.0485 21.6229 63.619 20.8695 63.3741 20.0502C63.115 19.188 62.9863 18.2922 62.9924 17.3925L63.0039 17.4078V17.4075Z"
+                      fill="white" />
+                    <path
+                      d="M85.6022 11.1398C84.9564 11.1308 84.3251 11.335 83.8082 11.7207C83.2841 12.1242 82.8444 12.6264 82.5144 13.1978C82.1514 13.806 81.8787 14.4638 81.7053 15.15C81.5374 15.8077 81.45 16.4829 81.4459 17.1617C81.4047 17.9903 81.5742 18.8154 81.9384 19.5614C82.2706 20.1347 82.8659 20.4234 83.7323 20.4234C84.3792 20.4343 85.0113 20.2284 85.5263 19.8386C86.0515 19.4351 86.492 18.9329 86.824 18.3621C87.1818 17.753 87.4478 17.0956 87.6143 16.4099C87.7803 15.7508 87.8677 15.074 87.8735 14.3938C87.9164 13.5657 87.7462 12.7399 87.381 11.9941C87.049 11.4247 86.4497 11.136 85.587 11.136L85.6024 11.1398H85.6022ZM83.3122 24.2998C82.3396 24.3222 81.3725 24.1544 80.4648 23.8061C79.7011 23.5065 79.019 23.0335 78.4724 22.4239C77.9349 21.8099 77.5301 21.0928 77.2817 20.3167C77.0118 19.4466 76.8827 18.539 76.9 17.6286C76.903 16.3749 77.105 15.1292 77.4996 13.9381C77.8824 12.7393 78.4801 11.6193 79.2625 10.6311C80.0485 9.6431 81.026 8.82188 82.1365 8.21635C83.3319 7.57693 84.6725 7.2538 86.0298 7.27841C86.9966 7.26091 87.9584 7.42876 88.862 7.77212C89.6265 8.06682 90.3124 8.53347 90.8656 9.13517C91.3999 9.75081 91.8038 10.4676 92.0528 11.2423C92.3246 12.1133 92.4535 13.0223 92.4345 13.9343C92.4307 15.1869 92.2336 16.4318 91.8506 17.6248C91.4743 18.8252 90.8876 19.9496 90.1176 20.9471C89.3432 21.9392 88.3695 22.7604 87.2587 23.3583C86.0449 24.001 84.687 24.3252 83.3122 24.2998Z"
+                      fill="white" />
+                    <path
+                      d="M99.6685 5.71933C99.0452 5.72589 98.4371 5.52688 97.9397 5.15372C97.4096 4.73682 97.1232 4.08483 97.1762 3.41478C97.174 2.99679 97.2636 2.58318 97.4392 2.20346C97.603 1.8355 97.833 1.50116 98.1186 1.21631C98.4137 0.939924 98.7545 0.716304 99.1263 0.55556C99.511 0.390988 99.9255 0.307062 100.344 0.308703C100.969 0.303235 101.578 0.503892 102.077 0.878142C102.606 1.29586 102.892 1.94731 102.841 2.61708C102.841 3.03671 102.75 3.45142 102.573 3.83195C102.408 4.20019 102.173 4.53398 101.882 4.81528C101.59 5.09358 101.25 5.3172 100.878 5.47603C100.496 5.63923 100.084 5.72206 99.6682 5.71906L99.6685 5.71933ZM97.4475 23.8648H92.8672L96.7299 7.68982H101.341L97.4475 23.8648Z"
+                      fill="white" />
+                    <path
+                      d="M104.635 8.42888C104.983 8.33019 105.368 8.20854 105.78 8.07595C106.193 7.94309 106.673 7.82144 107.204 7.69624C107.785 7.57349 108.373 7.48109 108.963 7.41903C109.698 7.34194 110.435 7.30504 111.174 7.30886C113.586 7.30886 115.25 8.00597 116.166 9.401C116.715 10.2364 116.992 11.2556 116.999 12.4587V12.5454C116.995 13.3278 116.877 14.187 116.647 15.1227L114.544 23.8554H109.948L111.99 15.3045C112.112 14.7734 112.212 14.257 112.284 13.752C112.364 13.3149 112.364 12.8674 112.284 12.4308C112.208 12.0659 112.006 11.7394 111.712 11.5082C111.305 11.2425 110.82 11.1183 110.334 11.155C109.722 11.1561 109.112 11.2184 108.513 11.3411L105.513 23.8707H100.891L104.635 8.42888Z"
+                      fill="white" />
+                  </svg>
+                  <p>
+                    *Note that evaluations are averages based on independent study and may vary
+                  </p>
+                </div><!-- /.btd-f -->
+
+              </div><!-- /.bt-d -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <p class="normtxt">
+                AnetaBTC is the leading Wrapped Bitcoin protocol natively built on Cardano.
+                Users can transact cBTC with rapid settlement and DeFi capabilities of the Cardano blockchain while
+                retaining their ownership of native BTC.
+              </p>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+        </div><!-- /.mid-row -->
+
+      </div><!-- /.row-wrapper -->
+
+    </div><!-- /.container -->
+  </section><!-- /.meet -->
+
+
+
+  <section class="case">
+    <div class="container">
+      <div class="sec-t" data-aos="fade-up" data-aos-duration="3000">
+        <h2> The Aneta Era </h2>
         <p>
-          Learn more about our partners who are contributing to
-          decentralization.
+          Aneta represents a significant leap forward
+          in how Bitcoin can help improve our daily lives.
         </p>
-      </div>
 
-      <article class="groupClients">
-        <a class="cardClient" href="https://kyberswap.com/" target="_blank">
-          <img
-            src="./img/kyberswap_lihgt.png"
-            alt="kyberswap_logo"
-            class="sunMode"
-          />
-          <img
-            src="./img/kyberswap_dark.png"
-            alt="kyberswap_logo"
-            class="darkMode"
-          />
-        </a>
-        <a class="cardClient" href="https://minswap.org/" target="_blank">
-          <img src="./img/min_light.png" alt="minswap_logo" class="sunMode" />
-          <img src="./img/min_dark.png" alt="minswap_logo" class="darkMode" />
-        </a>
-        <a class="cardClient" href="https://www.ergopad.io/" target="_blank">
-          <img
-            src="./img/ergopad_light.png"
-            alt="ergopad_logo"
-            class="sunMode"
-          />
-          <img
-            src="./img/ergopad_dark.png"
-            alt="ergopad_logo"
-            class="darkMode"
-          />
-        </a>
-        <a class="cardClient" href="https://www.getblok.io/" target="_blank">
-          <img
-            src="./img/getblok_light.png"
-            alt="getblok_logo"
-            class="sunMode"
-          />
-          <img
-            src="./img/getblok_dark.png"
-            alt="getblok_logo"
-            class="darkMode"
-          />
-        </a>
-        <a class="cardClient" href="https://saturnlabs.org" target="_blank">
-          <img src="./img/saturn_light.png" alt="saturn_logo" class="sunMode" />
-          <img src="./img/saturn_dark.png" alt="saturn_logo" class="darkMode" />
-        </a>
-      </article>
-    </section>
+      </div><!-- /.sec-t -->
 
-    <div class="background background2">
-      <div>
-        <img src="./img/cardano_light.png" alt="background" class="sunMode" />
-        <img src="./img/cardano_dark.png" alt="background" class="darkMode" />
-      </div>
-    </div>
+      <div class="row g-5 justify-content-center">
+        <div class="col-lg-4 col-md-6 col-10">
+          <div class="case-single" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            data-aos-duration="1500">
+            <img src="assets/img/case/chart-bar.svg" class="case-img" alt="chart">
 
-    <section class="social">
-      <div class="title">
-        <h2>Join our Community</h2>
-        <p>
-          Chat with our team and community members as anetaBTC brings DeFi to
-          Ergo and Cardano.
-        </p>
-      </div>
+            <h3> User Friendly </h3>
+            <p> Use any native Bitcoin wallet
+              to interact with our protocol. </p>
+          </div><!-- /.case-single -->
+        </div><!-- /.col-lg-4 -->
 
-      <article class="groupSocial">
-        <a class="cardSocial twitter" href="https://twitter.com/anetaBTC">
-          <img src="./img/twitter.png" alt="twitter" />
-          <h3>Twitter</h3>
-          <p>Stay up to date with @anetaBTC updates on our Twitter.</p>
-        </a>
-
-        <a class="cardSocial discord" href="https://discord.gg/agRnHsZqhJ">
-          <img src="./img/discord.png" alt="discord" />
-          <h3>Discord</h3>
-          <p>Meet and chat with the team on our Discord server.</p>
-        </a>
-
-        <a class="cardSocial telegram" href="https://t.me/anetabtc">
-          <img src="./img/telegram.png" alt="telegram" />
-          <h3>Telegram</h3>
-          <p>Stay up to date with announcements in our Telegram.</p>
-        </a>
-
-        <a class="cardSocial medium" href="https://medium.com/@anetaBTC">
-          <img src="./img/medium_l.png" alt="medium" class="sunMode" />
-          <img src="./img/medium_d.png" alt="medium" class="darkMode" />
-          <h3>Medium</h3>
-          <p>Read our Medium articles for in depth updates on our progress.</p>
-        </a>
-      </article>
-    </section>
-
-    <footer>
-      <div class="footer">
-        <div class="foot">
-          <article class="logoFooter">
-            <a href="/">
-              <img
-                src="./img/aneta_logo_light.png"
-                alt="aneta_logo"
-                class="sunMode"
-              />
-              <img
-                src="./img/aneta_logo_dark.png"
-                alt="aneta_logo"
-                class="darkMode"
-              />
-            </a>
+        <div class="col-lg-4 col-md-6 col-10">
+          <div class="case-single" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <img src="assets/img/case/cube.png" class="case-img" alt="chart">
+            <h3> Secure and Reliable </h3>
             <p>
-              anetaBTC is a decentralized, secure protocol that allows users to
-              unlock the value of their Bitcoin on Ergo and Cardano.
+              An audited, multi-sig schema protocol verified by Guardians.
             </p>
-          </article>
+          </div><!-- /.case-single -->
+        </div><!-- /.col-lg-4 -->
 
-          <nav>
-            <ul>
-              <h4>anetaBTC</h4>
-              <a href="https://docs.anetabtc.io/" target="_blank">
-                <li>Docs</li>
-              </a>
-              <a href="https://medium.com/@anetaBTC" target="_blank">
-                <li>News & Updates</li>
-              </a>
-              <a
-                href="https://medium.com/@anetaBTC/neta-tokenomics-55629989de2b"
-                target="_blank"
-              >
-                <li>Tokenomics</li>
-              </a>
-            </ul>
-            <ul>
-              <h4>Resources</h4>
-              <a
-                href="https://drive.google.com/drive/folders/13IGRgf9wNCPfckTQ6DSMaIo9gE-wx0zm"
-                target="_blank"
-              >
-                <li>Media Kit</li>
-              </a>
-              <a
-                href="https://medium.com/@anetaBTC/anetabtc-litepaper-v1-0-171f29b3276a"
-                target="_blank"
-              >
-                <li>Litepaper</li>
-              </a>
-              <a
-                href="https://medium.com/@anetaBTC/roadmap-3-0-the-path-to-btc-on-cardano-and-ergo-9fc3bed3e0c2"
-                target="_blank"
-              >
-                <li>Roadmap</li>
-              </a>
-              <a
-                href="https://datastudio.google.com/u/0/reporting/4cb333f9-39bf-448b-8d2d-f7ac3f44ad5d/page/p_0h6vsjfnsc"
-                target="_blank"
-              >
-                <li>Neta Liquidity Fund</li>
-              </a>
-            </ul>
-            <ul>
-              <h4>Foundation</h4>
-              <a href="mailto:info@anetabtc.io">
-                <li>Contact</li>
-              </a>
-            </ul>
-          </nav>
-        </div>
+        <div class="col-lg-4 col-md-6 col-10">
+          <div class="case-single" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            data-aos-duration="1500">
+            <img src="assets/img/case/swap-exchange 6.svg" class="case-img" alt="chart">
+            <h3> Open Source </h3>
+            <p>
+              Guaranteed and verifiable through
+              transparent and accessible
+              smart contracts.
+            </p>
+          </div><!-- /.case-single -->
+        </div><!-- /.col-lg-4 -->
 
-        <section>
-          <div class="icons">
-            <i
-              ><a href="https://twitter.com/anetaBTC">
-                <img
-                  src="./img/twitter_foot_l.png"
-                  alt="twitter"
-                  class="sunMode"
-                />
-                <img
-                  src="./img/twitter_foot_d.png"
-                  alt="twitter"
-                  class="darkMode"
-                />
-              </a>
-            </i>
-            <i
-              ><a href="https://t.me/anetabtc">
-                <img
-                  src="./img/telegram_foot_l.png"
-                  alt="telegram"
-                  class="sunMode"
-                />
-                <img
-                  src="./img/telegram_foot_d.png"
-                  alt="telegram"
-                  class="darkMode"
-                />
-              </a>
-            </i>
-            <i
-              ><a href="https://discord.gg/agRnHsZqhJ">
-                <img
-                  src="./img/discord_foot_l.png"
-                  alt="discord"
-                  class="sunMode"
-                />
-                <img
-                  src="./img/discord_foot_d.png"
-                  alt="discord"
-                  class="darkMode"
-                />
-              </a>
-            </i>
-            <i
-              ><a href="https://medium.com/@anetaBTC">
-                <img
-                  src="./img/medium_foot_l.png"
-                  alt="medium"
-                  class="sunMode"
-                />
-                <img
-                  src="./img/medium_foot_d.png"
-                  alt="medium"
-                  class="darkMode"
-                />
-              </a>
-            </i>
-          </div>
+      </div><!-- /.row -->
 
-          <div class="rights">
-            <p>anetaBTC is a Malaysia</p>
-            <p>based DAO.</p>
-          </div>
-        </section>
-      </div>
-    </footer>
+    </div><!-- /.container -->
+  </section><!-- /.case -->
 
-    <script src="./js/main.js"></script>
-  </body>
+
+
+
+  <section class="cbtc">
+    <div class="container">
+      <div class="sec-t">
+        <p> <span>cBTC</span> surpasses Native Bitcoin and other wrapped BTC protocols
+          on a range of benchmarks including security, speed and cost.</p>
+      </div><!-- /.sec-t -->
+
+      <table class="table  comparison-table">
+        <thead>
+          <tr>
+            <th class="text-start"> <small>Capability</small> </th>
+            <th class="bg pt-4" style="vertical-align: sub;"> <span>AnetaBTC</span> </th>
+            <th>
+              <h5> Bitcoin </h5>
+              <p>Numbers calculated during
+                independent testing
+              </p>
+            </th>
+            <th>
+              <h5>WBTC </h5>
+              <p>Numbers calculated during
+                independent testing
+              </p>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class="tit text-start">Speed</td>
+            <td class="bg"> 11s </td>
+            <td> 3m </td>
+            <td> 1m 25s </td>
+          </tr>
+          <tr>
+            <td class="tit text-start">Cost</td>
+            <td class="bg"> $0.48 </td>
+            <td> $3.25 </td>
+            <td>$2.13</td>
+          </tr>
+          <tr>
+            <td class="tit text-start">DeFi</td>
+            <td class="bg"> Yes </td>
+            <td>No</td>
+            <td>Yes</td>
+          </tr>
+
+        </tbody>
+      </table><!--table-->
+
+
+
+    </div><!-- /.container -->
+  </section><!-- /.cbtc -->
+
+  <section class="tokeno" id="token">
+    <div class="container">
+      <div class="sec-t" data-aos="fade-up" data-aos-duration="3000">
+        <h2> 70% public Distribution </h2>
+      </div><!-- /.sec-t -->
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-5">
+          <div class="token-box">
+            <img src="assets/img/token/graph.png" class="token-graph" alt="">
+            <div class="token-text">
+              <h4> 70% </h4>
+              <p>PUBLIC</p>
+            </div><!-- /.token-text -->
+          </div><!-- /.token-box -->
+        </div><!-- /.col-lg-5 -->
+        <div class="col-lg-4">
+          <div class="token-list">
+            <div class="token-point blue" data-aos="zoom-out-left" data-aos-duration="1000">
+              <h6> Public </h6>
+              <p>70 %</p>
+            </div><!-- /.token-point -->
+            <div class="token-point pink" data-aos="zoom-out-left" data-aos-duration="2000">
+              <h6> Team </h6>
+              <p>20 %</p>
+            </div><!-- /.token-point -->
+            <div class="token-point green" data-aos="zoom-out-left" data-aos-duration="3000">
+              <h6> Treasury </h6>
+              <p>10 %</p>
+            </div><!-- /.token-point -->
+
+          </div><!-- /.token-list -->
+          <div class="text-center mt-lg-5 mt-4">
+            <a href="https://coinmarketcap.com/currencies/anetabtc/" target="_blank" class="btn-round"> Track cNETA </a>
+          </div><!-- /.text-center -->
+        </div><!-- /.col-lg-5 -->
+      </div><!-- /.row -->
+
+
+
+
+    </div><!-- /.container -->
+  </section><!-- /.tokeno -->
+
+  <section class="feature" id="features">
+    <div class="container">
+      <div class="sec-t" data-aos="fade-up" data-aos-duration="3000">
+        <h2>
+          Aneta V2 has <span>3 Unique Features</span>
+        </h2>
+      </div><!-- /.sec-t -->
+
+      <div class="row gy-5 justify-content-center">
+        <div class="col-lg-3">
+          <div class="f-con">
+            <div class="f-single">
+              <p>Guardians</p>
+              <div class="r-p" data-aos="zoom-in" data-aos-duration="1500">
+                <i></i><i></i><i></i><i></i>
+              </div><!-- /.r-p -->
+            </div><!-- /.f-single -->
+            <p class="parra">
+              Guardians assure
+              the correct amount of cBTC is always minted.
+            </p>
+          </div><!-- /.f-con -->
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+          <div class="f-con">
+            <div class="f-single">
+              <p data-aos="zoom-out-down" data-aos-duration="1500">Onboarding</p>
+              <svg class="arrow-s" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 185" fill="none">
+                <path
+                  d="M131 185L139.66 170H122.34L131 185ZM0 3.5L90.5 3.5V0.5L0 0.5L0 3.5ZM129.5 42.5V171.5H132.5V42.5H129.5ZM90.5 3.5C112.039 3.5 129.5 20.9609 129.5 42.5H132.5C132.5 19.304 113.696 0.5 90.5 0.5V3.5Z"
+                  fill="url(#paint0_linear_1540_110)" />
+                <defs>
+                  <linearGradient id="paint0_linear_1540_110" x1="65.5" y1="2" x2="65.5" y2="185"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#648FFF" />
+                    <stop offset="1" stop-color="#48BDFF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div><!-- /.f-single -->
+            <p class="parra">
+              Onboarding quick and easy for both Guardians and Users.
+            </p>
+          </div><!-- /.f-con -->
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+          <div class="f-con">
+            <div class="f-single">
+              <p data-aos="zoom-out-down" data-aos-duration="3000">Security</p>
+              <svg class="lok" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142 187" fill="none">
+                <path
+                  d="M57.3421 107.145V107.14C57.3421 99.7294 63.413 93.6969 70.933 93.6969C78.4401 93.6969 84.503 99.7087 84.5238 107.102C84.3599 110.148 83.1246 113.045 81.0281 115.288C78.333 118.076 77.3965 122.109 78.5979 125.789L78.6145 125.84L78.6346 125.889L80.8909 131.43C81.5946 133.514 81.2483 135.807 79.9541 137.598C78.6514 139.401 76.5459 140.476 74.2966 140.477C74.2964 140.477 74.2963 140.477 74.2961 140.477H67.5804C65.4067 140.444 63.3775 139.409 62.0906 137.686C60.8088 135.97 60.4076 133.765 60.9997 131.718L62.8977 126.169L62.9011 126.159L62.9044 126.149C64.1026 122.479 63.1743 118.458 60.4959 115.67C58.4488 113.291 57.331 110.267 57.3421 107.145ZM112.615 27.0226V27.0237C112.615 35.8085 115.923 43.8198 120.261 51.3349C122.432 55.0956 124.88 58.7632 127.327 62.3565C127.759 62.9909 128.191 63.6225 128.621 64.252C130.637 67.202 132.619 70.1034 134.447 73.01C139.3 80.7265 141.477 90.0796 140.087 99.6171L131.457 151.519C127.436 171.648 109.351 186.002 88.6066 185.487L88.5879 185.486H88.5693H53.2967H53.2802L53.2637 185.486C32.6678 185.94 14.7124 171.74 10.5899 151.784L1.96111 99.89C1.96067 99.8871 1.96022 99.8842 1.95978 99.8813C0.483998 90.2908 2.62371 80.8617 7.48036 73.0795C9.31808 70.1348 11.3153 67.1955 13.3459 64.2071C13.7537 63.607 14.1628 63.0048 14.5723 62.4003C17.0112 58.7995 19.4528 55.1251 21.6188 51.3587C25.9473 43.8323 29.2513 35.8132 29.2513 27.0237V27.0226C29.2466 20.0979 32.0874 13.4661 37.1256 8.6538C42.1643 3.84092 48.967 1.26278 55.9695 1.51719L55.9967 1.51818H56.0239H85.842H85.8693L85.8965 1.51719C92.8989 1.26278 99.7017 3.84092 104.74 8.6538C109.779 13.4661 112.619 20.0979 112.615 27.0226ZM39.8891 26.9564L39.8876 26.99V27.0237C39.8876 41.6233 51.723 53.4587 66.3226 53.4587H75.5433C90.1429 53.4587 101.978 41.6233 101.978 27.0237V26.99L101.977 26.9564C101.595 18.4555 94.3612 11.8808 85.8132 12.201H56.0526C47.5047 11.8808 40.2704 18.4555 39.8891 26.9564ZM117.853 149.41L117.859 149.378L117.865 149.346L126.956 97.2256L126.961 97.1963L126.965 97.1668C127.926 89.9829 125.622 82.7496 120.679 77.4151C114.74 70.752 106.162 66.9914 97.1956 67.1121H44.6746C35.7343 66.9447 27.1591 70.6383 21.1847 77.2373L21.1789 77.2438L21.1731 77.2504C16.3409 82.7145 14.2094 90.0265 15.3611 97.2055L15.3624 97.2131L23.9987 149.334L24.0051 149.372L24.0134 149.41C26.9882 162.961 39.3666 172.41 53.3282 171.833H88.5377C102.499 172.41 114.878 162.961 117.853 149.41Z"
+                  stroke="url(#paint0_linear_1540_109)" stroke-width="3" />
+                <defs>
+                  <linearGradient id="paint0_linear_1540_109" x1="71" y1="0" x2="71" y2="187"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#648FFF" />
+                    <stop offset="1" stop-color="#48BDFF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div><!-- /.f-single -->
+            <p class="parra">
+              AnetaBTC is audited and decentralized.
+            </p>
+          </div><!-- /.f-con -->
+        </div><!-- /.col-lg-3 -->
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+  </section><!-- /.feature -->
+
+
+  <section class="anytime">
+    <div class="container">
+      <div class="sec-t" data-aos="zoom-in" data-aos-duration="2000">
+        <h2> <span>Bitcoin</span> - Everywhere, Anytime </h2>
+        <p>cBTC is natively useable in top Cardano wallets and DeFi protocols including DEXs and Lending Protocols</p>
+      </div><!-- /.sec-t -->
+
+      <div class="phone-screenshot">
+        <img src="assets/img/screenshots/img-1.png" class="mobile-screen" alt="" data-aos="flip-left"
+          data-aos-duration="3000">
+
+        <img src="assets/img/screenshots/img-2.png" class="mobile-screen" alt="" data-aos="flip-right"
+          data-aos-duration="3000">
+      </div><!-- /.phone-screenshot -->
+
+    </div><!-- /.container -->
+  </section><!-- /.anytime -->
+
+  <section class="video-cta" id="video">
+    <div class="container">
+      <div class="sec-t" data-aos="zoom-in" data-aos-duration="2000">
+        <h2> Hands-on with Aneta </h2>
+        <p>
+          Watch highlights from our testing of Aneta’s on-chain capabilities.
+          Curious to learn more? Explore our how-to here
+        </p>
+      </div><!-- /.sec-t -->
+      <div class="video-banner">
+        <img src="assets/img/videos/big.png" class="w-100" alt="">
+        <a href="assets/img/videos/launch-vid.mp4" class="play-btn glightbox">
+          <img src="assets/img/screenshots/play.svg" alt="">
+        </a>
+      </div><!-- /.video-banner -->
+    </div><!-- /.container -->
+  </section><!-- /.video-cta -->
+
+  <section class="potent">
+    <div class="container">
+      <div class="sec-t" data-aos="zoom-in" data-aos-duration="2000">
+        <h2> The Potential of Aneta </h2>
+        <p>Learn about what Aneta can do from people around the world.</p>
+
+      </div><!-- /.sec-t -->
+
+      <div class="row gx-lg-5 gx-4 justify-content-evenly">
+
+        <div class="col-xl-5 col-lg-5 col-md-6">
+          <div class="po-single" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <a href="https://www.youtube.com/watch?v=V3rKJnXrKU4&feature=youtu.be"
+              class="d-block w-100 img-con glightbox">
+              <img src="assets/img/videos/JJ-square.png" class="w-img" alt="thumbnail">
+              <img src="assets/img/screenshots/play.svg" class="play-btn" alt="play">
+            </a>
+            <span> Jean </span>
+            <h4>
+              Business Loans in <br>
+              Uganda
+            </h4>
+          </div><!-- /.po-single -->
+        </div><!-- /.col-xl-4 -->
+
+        <div class="col-xl-5 col-lg-5 col-md-6">
+          <div class="po-single" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <a href="https://www.youtube.com/watch?v=GILfJZEpRFg" class="d-block w-100 img-con glightbox">
+              <img src="assets/img/videos/Leo-square.png" class="w-img" alt="thumbnail">
+              <img src="assets/img/screenshots/play.svg" class="play-btn" alt="play">
+            </a>
+            <span> Leandros </span>
+            <h4>
+              V2 Protocol <br>
+              Architecture
+            </h4>
+          </div><!-- /.po-single -->
+        </div><!-- /.col-xl-4 -->
+
+        <div class="col-xl-5 col-lg-5 col-md-6">
+          <div class="po-single" data-aos="fade-right" data-aos-offset="00" data-aos-easing="ease-in-sine">
+            <a href="https://www.youtube.com/watch?v=_-VzHteEZQU&feature=youtu.be"
+              class="d-block w-100 img-con glightbox">
+              <img src="assets/img/videos/Diego-Square.png" class="w-img" alt="thumbnail">
+              <img src="assets/img/screenshots/play.svg" class="play-btn" alt="play">
+            </a>
+            <span> Diego </span>
+            <h4>AnetaBTC in <br>
+              Argentina</h4>
+          </div><!-- /.po-single -->
+        </div><!-- /.col-xl-4 -->
+
+
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+  </section><!-- /.potent -->
+
+
+  <section class="cta-1">
+    <div class="container">
+      <div class="cta-circle">
+        <div class="cta-txt" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h2> New Possibilities with cBTC </h2>
+          <p> Experience cBTC on Cardano and unlock new ways to transact, lend, and more. </p>
+          <a href="https://twitter.com/anetabtc?s=21&t=X1sJLYL6zORh4pcBGIlQCw" target="_blank"
+            class="btn-outline-light">
+            <span> AnetaBTC Twitter </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path
+                d="M12.3438 4.09766L10.9338 5.50766L16.5138 11.0977H4.34375V13.0977H16.5138L10.9338 18.6877L12.3438 20.0977L20.3438 12.0977L12.3438 4.09766Z"
+                fill="white"></path>
+            </svg>
+          </a>
+        </div><!-- /.cta-txt -->
+      </div><!-- /.cta-circle -->
+    </div><!-- /.container -->
+  </section><!-- /.cta-1 -->
+
+  <section class="cta-2">
+    <div class="container">
+      <div class="cta-txt" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+        <h2> Open Source </h2>
+        <p> Dive into the AnetaBTC codebase </p>
+        <a href="https://github.com/orgs/anetalabs/repositories" target="_blank" class="btn-round-light"> View Code </a>
+      </div><!-- /.cta-txt -->
+    </div><!-- /.container -->
+  </section><!-- /.cta-2 -->
+
+  <section class="clients" id="int">
+    <div class="container">
+      <div class="sec-t">
+        <h2> Compatible with </h2>
+      </div><!-- /.sec-t -->
+
+      <div class="row-wrapper">
+        <div class="row gy-5">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="client-single">
+              <img src="assets/img/clients/eternl.png" class="client-img" alt="">
+              <p> Eternl  </p>
+            </div><!-- /.client-single -->
+          </div><!-- /.col-lg-3 -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="client-single">
+              <img src="assets/img/clients/miniswp.png" class="client-img" alt="">
+              <p> Minswap </p>
+            </div><!-- /.client-single -->
+          </div><!-- /.col-lg-3 -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="client-single">
+              <img src="assets/img/clients/same.png" class="client-img" alt="">
+              <p> Spectrum </p>
+            </div><!-- /.client-single -->
+          </div><!-- /.col-lg-3 -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="client-single">
+              <img src="assets/img/clients/teddy-swap.png" class="client-img" alt="">
+              <p> TeddySwap </p>
+            </div><!-- /.client-single -->
+          </div><!-- /.col-lg-3 -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="client-single">
+              <img src="assets/img/clients/cherry.png" class="client-img" alt="">
+              <p> CherryLend </p>
+            </div><!-- /.client-single -->
+          </div><!-- /.col-lg-3 -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="client-single">
+              <img src="assets/img/clients/vaspor.png" class="client-img" alt="">
+              <p> VESPR </p>
+            </div><!-- /.client-single -->
+          </div><!-- /.col-lg-3 -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="client-single">
+              <img src="assets/img/clients/taptools.png" class="client-img" alt="">
+              <p> TapTools  </p>
+            </div><!-- /.client-single -->
+          </div><!-- /.col-lg-3 -->
+
+
+          <div class="col-lg-3 col-md-4">
+            <div class="client-single">
+              <img src="assets/img/clients/dex.png" class="client-img" alt="">
+              <p> DexHunter </p>
+            </div><!-- /.client-single -->
+          </div><!-- /.col-lg-3 -->
+
+        </div><!-- /.row -->
+      </div><!-- /.row-wrapper -->
+
+    </div><!-- /.container -->
+  </section><!-- /.clients -->
+
+  <section class="social-section">
+    <div class="container">
+      <div class="sec-t">
+        <h2> JOIN AnetaBTC </h2>
+        <p> Join a dedicated community and shape the future of finance - decentralized, non-custodial and efficient.
+        </p>
+      </div><!-- /.sec-t -->
+
+      <div class="social-conx">
+        <a href="https://twitter.com/anetabtc?s=21&t=X1sJLYL6zORh4pcBGIlQCw" target="_blank">
+          <img src="assets/img/social/twitter.svg" alt="">
+          <p> Twitter </p>
+        </a>
+        <a href="https://discord.com/invite/S85CKeyHTc" target="_blank">
+          <img src="assets/img/social/discord.svg" alt="">
+          <p> Discord </p>
+        </a>
+        <a href="https://medium.com/@anetaBTC" target="_blank">
+          <img src="assets/img/social/medium.svg" alt="">
+          <p> Medium </p>
+        </a>
+      </div><!-- /.social-conx -->
+
+    </div><!-- /.container -->
+  </section><!-- /.social-section -->
+
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-10">
+          <div class="row gy-4">
+            <div class="col-lg-4">
+              <div class="footer-logo-w">
+                <img src="assets/img/logo/logo.png" class="footer-logo" alt="">
+
+              </div><!-- /.footer-logo-w -->
+            </div><!-- /.col-lg-3 -->
+            <div class="col-lg-2">
+              <div class="footer-links">
+                <h5> AnetaBTC </h5>
+                <ul>
+
+
+                  <li>
+                    <a href="https://docs.anetabtc.io/" target="_blank">Docs </a>
+                  </li>
+                  <li>
+                    <a href="https://medium.com/@anetaBTC" target="_blank">
+                      News & Updates
+                    </a>
+                  </li>
+
+
+                </ul>
+              </div><!-- /.footer-links -->
+            </div><!-- /.col-lg-3 -->
+
+            <div class="col-lg-2">
+              <div class="footer-links">
+                <h5> Resources </h5>
+                <ul>
+
+
+
+                  <li>
+                    <a href="https://medium.com/@anetaBTC/anetabtc-litepaper-v1-0-171f29b3276a" target="_blank">
+                      Litepaper
+                    </a>
+                  </li>
+
+
+
+                </ul>
+              </div><!-- /.footer-links -->
+            </div><!-- /.col-lg-3 -->
+
+            <div class="col-lg-3">
+              <div class="footer-links">
+                <h5> Foundation </h5>
+                <ul>
+                  <li>
+                    <a href="mailto:info@anetabtc.io">info@anetabtc.io</a>
+                  </li>
+
+                </ul>
+              </div><!-- /.footer-links -->
+            </div><!-- /.col-lg-3 -->
+
+          </div><!-- /.row -->
+        </div><!-- /.col-lg-9 -->
+
+        <div class="col-lg-2">
+          <div class="footer-social">
+            <a target="_blank" href="https://twitter.com/anetabtc?s=21&t=X1sJLYL6zORh4pcBGIlQCw">
+
+              <svg width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 5.78125C0 2.58835 2.65831 0 5.9375 0H32.0625C35.3417 0 38 2.58835 38 5.78125V31.2188C38 34.4116 35.3417 37 32.0625 37H5.9375C2.65831 37 0 34.4116 0 31.2188V5.78125ZM26.2437 13.2969C27.075 13.1812 27.7875 13.0656 28.5 12.7188C28.025 13.5281 27.3125 14.2219 26.4812 14.6844C26.7188 20.1187 22.6812 26.0156 15.4375 26.0156C13.3 26.0156 11.2812 25.3219 9.5 24.2812C11.5188 24.5125 13.6562 23.9344 15.0813 22.8937C13.3 22.8937 11.875 21.7375 11.4 20.2344C11.9938 20.35 12.5875 20.2344 13.1813 20.1187C11.4 19.6562 10.0938 18.0375 10.0938 16.3031C10.6875 16.5344 11.2812 16.7656 11.875 16.7656C10.2125 15.6094 9.61875 13.4125 10.6875 11.6781C12.7063 13.9906 15.5563 15.4937 18.7625 15.6094C18.1688 13.2969 20.0688 10.9844 22.5625 10.9844C23.6313 10.9844 24.7 11.4469 25.4125 12.1406C26.3625 11.9094 27.1938 11.6781 27.9062 11.2156C27.6687 12.1406 27.075 12.8344 26.2437 13.2969Z" />
+              </svg>
+
+            </a>
+
+            <a target="_blank" href="https://t.me/anetabtc">
+
+              <svg width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.9375 0H32.0625C35.3417 0 38 2.58835 38 5.78125V31.2188C38 34.4116 35.3417 37 32.0625 37H5.9375C2.65831 37 0 34.4116 0 31.2188V5.78125C0 2.58835 2.65831 0 5.9375 0ZM19.8216 13.8835C18.1199 14.5727 14.7189 15.9991 9.61865 18.1627C8.79045 18.4834 8.3566 18.7971 8.3171 19.1039C8.25036 19.6223 8.91711 19.8264 9.82506 20.1044C9.94857 20.1422 10.0765 20.1814 10.2077 20.2229C11.101 20.5057 12.3026 20.8364 12.9273 20.8496C13.494 20.8615 14.1264 20.634 14.8246 20.1672C19.59 17.0351 22.0498 15.452 22.2043 15.4179C22.3132 15.3938 22.4642 15.3635 22.5665 15.4521C22.6688 15.5406 22.6588 15.7082 22.6479 15.7532C22.5819 16.0274 19.9646 18.3966 18.6102 19.6227C18.1879 20.0049 17.8884 20.276 17.8272 20.338C17.69 20.4767 17.5502 20.6079 17.4159 20.734C16.586 21.5129 15.9637 22.0971 17.4503 23.051C18.1648 23.5094 18.7365 23.8885 19.3068 24.2667C19.9297 24.6797 20.5509 25.0916 21.3547 25.6047C21.5595 25.7354 21.7551 25.8711 21.9456 26.0034C22.6705 26.5065 23.3217 26.9586 24.1263 26.8865C24.5938 26.8446 25.0767 26.4166 25.3219 25.14C25.9015 22.1231 27.0408 15.5864 27.3041 12.8927C27.3271 12.6567 27.2981 12.3547 27.2748 12.2221C27.2515 12.0895 27.2028 11.9006 27.0258 11.7608C26.8162 11.5952 26.4926 11.5602 26.3479 11.5626C25.6898 11.574 24.6802 11.9158 19.8216 13.8835Z" />
+              </svg>
+
+            </a>
+            <a target="_blank" href="https://discord.com/invite/S85CKeyHTc">
+
+              <svg width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21.071 21.7375C21.356 22.089 21.698 22.4867 21.698 22.4867C23.7975 22.422 24.605 21.0807 24.605 21.0807C24.605 18.1022 23.237 15.688 23.237 15.688C21.869 14.689 20.5675 14.7167 20.5675 14.7167L20.4345 14.8647C22.0495 15.3457 22.8 16.0395 22.8 16.0395C21.812 15.5123 20.843 15.2533 19.9405 15.1515C19.2565 15.0775 18.601 15.096 18.0215 15.17C17.9717 15.17 17.9292 15.177 17.8813 15.185L17.86 15.1885C17.5275 15.2162 16.72 15.3365 15.7035 15.7713C15.352 15.9285 15.143 16.0395 15.143 16.0395C15.143 16.0395 15.9315 15.3088 17.6415 14.8278L17.5465 14.7167C17.5465 14.7167 16.245 14.689 14.877 15.688C14.877 15.688 13.509 18.1022 13.509 21.0807C13.509 21.0807 14.307 22.422 16.4065 22.4867C16.4065 22.4867 16.758 22.0705 17.043 21.719C15.8365 21.3675 15.3805 20.6275 15.3805 20.6275C15.3805 20.6275 15.4755 20.6922 15.6465 20.7847C15.656 20.794 15.6655 20.8033 15.6845 20.8125C15.6988 20.8218 15.713 20.8287 15.7273 20.8356C15.7415 20.8426 15.7558 20.8495 15.77 20.8587C16.0075 20.9883 16.245 21.09 16.4635 21.1732C16.853 21.3212 17.3185 21.4692 17.86 21.571C18.5725 21.7005 19.4085 21.7467 20.3205 21.5802C20.767 21.5063 21.223 21.3767 21.698 21.1825C22.0305 21.0623 22.401 20.8865 22.7905 20.6367C22.7905 20.6367 22.3155 21.3953 21.071 21.7375ZM16.3115 19.1938C16.3115 18.6295 16.739 18.167 17.2805 18.167C17.822 18.167 18.259 18.6295 18.2495 19.1938C18.2495 19.758 17.822 20.2205 17.2805 20.2205C16.7485 20.2205 16.3115 19.758 16.3115 19.1938ZM19.779 19.1938C19.779 18.6295 20.2065 18.167 20.748 18.167C21.2895 18.167 21.717 18.6295 21.717 19.1938C21.717 19.758 21.2895 20.2205 20.748 20.2205C20.216 20.2205 19.779 19.758 19.779 19.1938Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M32.0625 0C35.3417 0 38 2.58835 38 5.78125V31.2188C38 34.4116 35.3417 37 32.0625 37H5.9375C2.65831 37 0 34.4116 0 31.2188V5.78125C0 2.58835 2.65831 0 5.9375 0H32.0625ZM12.635 10.4062H25.365C26.4385 10.4062 27.3125 11.2572 27.3125 12.3117V28.9062L25.27 27.1488L24.1205 26.1127L22.9045 25.012L23.408 26.7232H12.635C11.5615 26.7232 10.6875 25.8722 10.6875 24.8178V12.3117C10.6875 11.2572 11.5615 10.4062 12.635 10.4062Z" />
+              </svg>
+
+            </a>
+
+            <a target="_blank" href="https://medium.com/@anetaBTC">
+
+              <svg width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.9375 0H32.0625C35.3417 0 38 2.58836 38 5.78125V31.2188C38 34.4116 35.3417 37 32.0625 37H5.9375C2.65832 37 0 34.4116 0 31.2188V5.78125C0 2.58836 2.65832 0 5.9375 0ZM11.5188 13.5281C11.6375 13.6437 11.7562 13.875 11.7562 14.1062V22.2C11.875 22.5469 11.7562 22.7781 11.5188 23.0094L9.5 25.3219V25.6687H15.0813V25.3219L13.0625 23.0094C12.9437 22.7781 12.825 22.5469 12.825 22.2V15.1469L17.8125 25.6687H18.2875L22.5625 15.1469V23.5875C22.5625 23.8187 22.5625 23.9344 22.4437 24.05L20.9 25.5531V25.9H28.3812V25.5531L26.9563 24.1656C26.8375 24.05 26.8375 23.8187 26.8375 23.7031V13.2969C26.7188 13.0656 26.8375 12.95 26.9563 12.8344L28.5 11.4469V11.1H23.275L19.475 20.2344L15.2 11.1H9.73751V11.4469L11.5188 13.5281Z" />
+              </svg>
+
+            </a>
+          </div><!-- /.footer-social -->
+          <div class="legal-text">
+            <p>
+              anetaBTC is a Malaysia
+              <br> based DAO.
+            </p>
+          </div><!-- /.legal-text -->
+
+        </div><!-- /.col-lg-3 -->
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </footer><!-- /.main-footer -->
+
+
+
+  <div class="page-loader">
+    <span class="loader"></span>
+  </div><!-- /.page-loader -->
+
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Magnific Popup JS -->
+  <!-- aos JS -->
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/js/main.js?v=1"></script>
+
+
+
+  <script>
+    // Function to check if an element is in the viewport
+    function isInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    // Function to reset the animation
+    function resetAnimation() {
+      var graphLine = document.querySelector('.graph-line');
+      graphLine.style.animation = 'none';
+      graphLine.offsetHeight; // Trigger reflow
+      graphLine.style.animation = 'draw 3s ease forwards';
+    }
+
+    // Add scroll event listener to check the viewport visibility on scroll
+    window.addEventListener('scroll', function () {
+      if (isInViewport(document.querySelector('.svg-section'))) {
+        var graphLine = document.querySelector('.graph-line');
+        // If the animation is not completed, start or resume the animation
+        if (graphLine.style.strokeDashoffset !== '0px') {
+          graphLine.style.animationPlayState = 'running';
+        } else {
+          // If the animation is completed, reset the animation
+          resetAnimation();
+        }
+      }
+    });
+  </script>
+
+  <script>
+    //========= glightbox
+    const glightbox = GLightbox({
+      selector: ".glightbox",
+    });
+  </script>
+
+
+</body>
+
+
 </html>
