@@ -296,11 +296,11 @@
   }
   .graph-line {
     position: absolute;
-    top: 50%;
-    left: 44%;
+    top: 49%;
+    left: 46%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 710px;
+    max-width: 705px;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s ease forwards;

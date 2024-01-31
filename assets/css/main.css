@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&family=Outfit:wght@400;500;600;700;800&display=swap"); /*--------------------------------------------------------------
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&family=Outfit:wght@400;500;600;700;800&display=swap");
+/*--------------------------------------------------------------
 # base
 --------------------------------------------------------------*/
 ::-moz-selection {
@@ -1120,12 +1121,12 @@ h6 a {
 }
 .row-wrapper .graph-line {
   position: absolute;
-  top: 50%;
-  left: 44%;
+  top: 49%;
+  left: 46%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 710px;
+  max-width: 705px;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   -webkit-animation: draw 3s ease forwards;
@@ -2613,3 +2614,4 @@ h6 a {
     margin-top: 15px;
   }
 }
+/*# sourceMappingURL=main.css.map */
